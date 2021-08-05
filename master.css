@@ -46,10 +46,10 @@ body{
   margin: auto;
   display: flex;
   flex-direction: row;
-	flex-wrap: nowrap;
-	justify-content: center;
-	align-items: stretch;
-	align-content: stretch;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: stretch;
+  align-content: stretch;
   background-color: black;
 }
 
