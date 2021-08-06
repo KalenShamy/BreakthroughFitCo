@@ -30,8 +30,6 @@ body{
 
 .CurrentNavPage{
   text-decoration: none;
-  padding-bottom: 4px;
-  border-bottom: 1px solid rgb(111,111,111);
   color: rgb(21,21,21);
 }
 
@@ -87,6 +85,14 @@ body{
   #threeBars{
     display: none;
   }
+  .CurrentNavPage{
+    padding-bottom: 4px;
+    border-bottom: 1px solid rgb(111,111,111);
+    color: rgb(21,21,21);
+  }
+  .mobileNavOverlay{
+    display: none;
+  }
 }
 
 @media screen and (max-width: 774px){
@@ -106,12 +112,51 @@ body{
   }
   #threeBars{
     color: rgb(111,111,111);
+    z-index: 1;
   }
   .threeBars:active{
     background-color: white;
   }
   .navBar{
     display: none;
+  }
+  .mobileNavOverlay{
+    /* Height & width depends on how you want to reveal the overlay (see JS below) */
+    height: 100%;
+    width: 0;
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    background-color: rgb(243,243,243);
+    overflow-x: hidden; /* Disable horizontal scroll */
+    transition: 0.5s; /* 0.5 second transition effect to slide in or slide down the overlay (height or width, depending on reveal) */
+  }
+  .mobileNavBar{
+    position: relative;
+    top: 25%; /* 25% from the top */
+    width: 100%; /* 100% width */
+    text-align: center; /* Centered text/links */
+    margin-top: 30px; /* 30px top margin to avoid conflict with the close button on smaller screens */
+    text-transform: uppercase;
+  }
+  .mobileNavOverlay a {
+    padding: 8px;
+    text-decoration: none;
+    font-size: 36px;
+    display: block; /* Display block instead of inline */
+    transition: 0.3s; /* Transition effects on hover (color) */
+  }
+  /* Position the close button (top right corner) */
+  .mobileNavOverlay .closebtn {
+    color: black;
+    position: absolute;
+    top: 20px;
+    right: 45px;
+    font-size: 60px;
+}
+  .CurrentNavPage{
+    font-weight: 900;
   }
   #logo{
     margin: 2px auto 56px auto
