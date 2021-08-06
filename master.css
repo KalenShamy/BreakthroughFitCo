@@ -65,6 +65,7 @@ body{
 }
 
 #Welcome_JakeHighFiving{
+  object-fit: cover;
   max-height: 1000px;
 }
 
@@ -101,6 +102,7 @@ body{
 
   #Welcome_JakeHighFiving{
     flex: 1;
+    max-height: 450px;
   }
   #threeBars{
     color: rgb(111,111,111);
