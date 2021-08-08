@@ -7,10 +7,7 @@ body{
 
 #logo{
   display: block;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 56px;
-  height: 123px;
+  max-width: 100%
 }
 
 .navBar{
@@ -95,6 +92,11 @@ body{
   #threeBars{
     display: none;
   }
+  #logo{
+    margin: 0 auto;
+    margin-top: 56px;
+    max-height: 123px;
+  }
   .CurrentNavPage{
     padding-bottom: 4px;
     border-bottom: 1px solid rgb(111,111,111);
@@ -137,12 +139,15 @@ body{
   }
   .veryTop{
     display: flex;
-    margin-top: 53.5px;
   }
   #threeBars{
     color: rgb(111,111,111);
     z-index: 1;
     margin-top: 30px;
+    width: 15%;
+  }
+  .emptySpacing{
+    width: 15%;
   }
   .navBar{
     display: none;
@@ -186,7 +191,11 @@ body{
     font-weight: 900;
   }
   #logo{
-    margin: 2px auto 56px auto
+    margin: 24px auto;
+    max-height: 80px;
+  }
+  #logoWrapper{
+    width: 70%
   }
   .footer{
     width:100%;
