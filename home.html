@@ -30,27 +30,27 @@
 
     </head>
   <body>
-    <div class="header">
-      <div class="veryTop">
+    <header>
+      <div id="veryTop">
         <span onclick="openNav()" id="threeBars">
           <svg viewBox="0 0 24 24" fill="currentColor" style="width:40px; height:40px; margin-top:10px">
             <path fill-rule="evenodd" d="M19 8H5a1 1 0 1 1 0-2h14a1 1 0 0 1 0 2zm0 5.097H5a1 1 0 1 1 0-2h14a1 1 0 1 1 0 2zm0 5.25H5a1 1 0 1 1 0-2h14a1 1 0 1 1 0 2z"></path>
           </svg>
         </span>
         <a href="home.html" id="logoWrapper"><img src="Pictures/BFC-logo.jpg" alt="BreakthroughFitCo" id="logo"></a>
-        <div class="emptySpacing"></div>
+        <div id="emptySpacing"></div>
       </div>
-      <div class="navBar">
+      <div id="navBar">
         <a href="home.html" class="CurrentNavPage">Home</a>
         <a href="about.html" class="NavLink">About</a>
         <a href="services.html" class="NavLink">Services</a>
         <a href="ignite.html" class="NavLink">Ignite</a>
         <a href="https://clients.mindbodyonline.com/ASP/su1.asp?studioid=5721621" class="NavLink">Client Login</a>
       </div>
-      <div class="mobileNavOverlay" id="mobNavOverlay">
+      <div id="mobileNavOverlay">
         <!-- Button to close the overlay navigation -->
-        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-        <div class="mobileNavBar">
+        <a href="javascript:void(0)" id="closebtn" onclick="closeNav()">&times;</a>
+        <div id="mobileNavBar">
           <a href="home.html" class="CurrentNavPage">Home</a>
           <a href="about.html" class="NavLink">About</a>
           <a href="services.html" class="NavLink">Services</a>
@@ -58,24 +58,43 @@
           <a href="https://clients.mindbodyonline.com/ASP/su1.asp?studioid=5721621" class="NavLink">Client Login</a>
         </div>
       </div>
-    </div>
-    <div id="Welcome">
-      <img src="Pictures/JakeHighFiving.jpg" alt="Jake high-fiving a customer" id="Welcome_JakeHighFiving">
-      <div id="Welcome_Text">
-        <br>
-        <h1 style="margin-block-start:0; margin-block-end:0">Welcome to Breakthrough Fit Co</h1>
-        <br>
-        <br>
-        <h1 style="margin-block-start:0; margin-block-end:0">Grand Opening 9/12/2021</h1>
-        <br>
+    </header>
+    <div class="padder"> <!-- Padder for welcome box -->
+      <div id="Welcome" class="centerBox">
+        <img src="Pictures/JakeHighFiving.jpg" alt="Jake high-fiving a customer" id="Welcome_JakeHighFiving">
+        <div id="Welcome_Text">
+          <br>
+          <p style="margin:0">Welcome to Breakthrough Fit Co</p>
+          <br>
+          <br>
+          <p style="margin:0">Grand Opening 9/12/2021</p>
+          <br>
+        </div>
       </div>
     </div>
-    <div class="map">
-      <iframe class="mapFrame" src="https://www.google.com/maps/embed/v1/place?q=place_id:EisyNTEgUyBDZW50cmFsIEF2ZSwgSGFydHNkYWxlLCBOWSAxMDUzMCwgVVNBIlESTwo0CjIJId7v2oSUwokRKS008ohLrDAaHgsQ7sHuoQEaFAoSCff-j5mNlMKJETEGzo5b6aauDBD7ASoUChIJB4HnyWOTwokRxagot0SsYA4&key=AIzaSyCKP7WCukCUXgtsXJG02sblKfc6ikyWN_o" style="border:0" loading="lazy"></iframe>
+    <div id="readytobreakthrough">
+      <div class="padder">
+        <div class="centerBox" id="rtbt_contents">
+          <div>
+            <h4>Are you ready to Breakthrough?</h4>
+            <p>Breakthrough Fit Co is a personal training and small group training facility that exists to adapt to individuals life styles through group, in person, and virtual training options.</p>
+            <br>
+            <p>More importantly we exist to create equal access to health and wellness for the special needs community through our adaptive and personalized IGNITE Fitness Program.</p>
+            <br>
+            <p>Exercise and a balanced lifestyle is the first line of defense against an array of things that life can throw at you.  Here at Breakthrough, we want you to not only achieve your goals, but the quality of life that we believe every individual deserves.</p>
+          </div>
+          <div id="rtbt_image">
+            <img src="Pictures/MissingImage.jpg" alt="Image Missing" style="width: 100%;">
+          </div>
+        </div>
+      </div>
     </div>
-    <div class="footer">
-      <p class="copywrite">Copyright © 2021 Breakghrough Fit Co - All Rights Reserved.</p>
-      <p class="credit">Created by Kalen Shamy</p>
+    <div id="map">
+      <iframe id="mapFrame" src="https://www.google.com/maps/embed/v1/place?q=place_id:EisyNTEgUyBDZW50cmFsIEF2ZSwgSGFydHNkYWxlLCBOWSAxMDUzMCwgVVNBIlESTwo0CjIJId7v2oSUwokRKS008ohLrDAaHgsQ7sHuoQEaFAoSCff-j5mNlMKJETEGzo5b6aauDBD7ASoUChIJB4HnyWOTwokRxagot0SsYA4&key=AIzaSyCKP7WCukCUXgtsXJG02sblKfc6ikyWN_o" style="border:0" loading="lazy"></iframe>
     </div>
+    <footer>
+      <p id="copywrite">Copyright © 2021 Breakghrough Fit Co - All Rights Reserved.</p>
+      <p id="credit">Created by Kalen Shamy</p>
+    </footer>
   </body>
 </html>

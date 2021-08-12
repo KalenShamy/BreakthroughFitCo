@@ -1,16 +1,16 @@
 
 /* Made By Kalen Shamy */
 
-body{
-  margin: 0 15px 0 15px;
+body {
+  margin: 0;
 }
 
-#logo{
+#logo {
   display: block;
   max-width: 100%
 }
 
-.navBar{
+#navBar {
   display: flex;
   justify-content: space-between;
   padding: 24px 0px;
@@ -20,39 +20,46 @@ body{
   line-height: 24px;
   letter-spacing: 3.424px;
   text-transform: uppercase;
-  width: 85%;
-  max-width: 700px;
+  max-width: 600px;
   margin: auto;
 }
 
-.CurrentNavPage{
+.padder {
+  margin: 0 15px;
+}
+
+.centerBox {
+  margin: 0 auto;
+}
+
+.CurrentNavPage {
   text-decoration: none;
   color: rgb(21,21,21);
 }
 
-.CurrentNavPage:hover{
+.CurrentNavPage:hover {
   color: rgb(111,111,111)
 }
 
-.NavLink{
+.NavLink {
   text-decoration: none;
   color: rgb(21,21,21);
 }
 
-.NavLink:hover{
+.NavLink:hover {
   color: rgb(111,111,111)
 }
 
-#Welcome{
+#Welcome {
   margin: 0 auto 40px auto;
   background-color: black;
 }
 
-#Welcome_Text{
+#Welcome_Text {
   color: white;
   font-family: "Playfair Display", serif;
-  font-size: 12px;
-  font-weight: 100;
+  font-size: 24px;
+  font-weight: 400;
   line-height: 30px;
   text-align: center;
   margin: auto;
@@ -60,21 +67,47 @@ body{
   padding-right: 25px;
 }
 
-#Welcome_JakeHighFiving{
+#Welcome_JakeHighFiving {
   object-fit: cover;
   max-height: 1000px;
 }
 
-.map{
-  margin: 0 auto;
-  height: 320px;
+#readytobreakthrough {
+  background-color: rgb(22, 22, 22);
+  padding: 40px 0;
+  font-family: 'Source Sans Pro', arial, sans-serif;
+  margin: 0 0 40px 0;
 }
-.mapFrame{
+
+#rtbt_contents {
+  display: flex;
+}
+
+#readytobreakthrough h4 {
+  color: rgb(247, 247, 247);
+  line-height: 31.25px;
+  font-size: 25px;
+  font-weight: 400;
+  margin: 0 0 24px 0;
+}
+
+#readytobreakthrough p {
+  color: rgb(164, 164, 164);
+  line-height: 27px;
+  font-size: 18px;
+  margin: 0;
+}
+
+#map {
+  margin: 0 auto;
+  width: 100%;
+}
+#mapFrame {
   width: 100%;
   height: 100%;
 }
 
-.footer{
+footer {
   color: rgb(89,89,89);
   text-transform: uppercase;
   font-size: 14px;
@@ -84,10 +117,12 @@ body{
   padding: 5% 0;
 }
 
-@media screen and (min-width: 775px){
-  #Welcome{
+@media screen and (min-width: 775px) {
+  .centerBox {
     max-width: 95%;
     width: 1000px;
+  }
+  #Welcome {
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
@@ -95,30 +130,37 @@ body{
     align-items: stretch;
     align-content: stretch;
   }
-  #Welcome_JakeHighFiving{
+  #Welcome_JakeHighFiving {
     width: 70%;
   }
-  #threeBars{
+  #threeBars {
     display: none;
   }
-  #logo{
+  #logo {
     margin: 0 auto;
     margin-top: 56px;
     max-height: 123px;
   }
-  .CurrentNavPage{
+  .CurrentNavPage {
     padding-bottom: 4px;
     border-bottom: 1px solid rgb(111,111,111);
     color: rgb(21,21,21);
   }
-  .mobileNavOverlay{
+  #mobileNavOverlay {
     display: none;
   }
-  .map{
-    max-width: 95%;
-    width: 1000px;
+  #rtbt_contents{
+    justify-content: space-evenly;
+    align-items: center;
   }
-  .footer{
+  #rtbt_image {
+    min-width: 320px;
+    margin: 0 0 0 25px;
+  }
+  #map {
+    height: 420px;
+  }
+  footer {
     max-width: 91.5%;
     width: 1000px;
     position: absolute;
@@ -132,40 +174,36 @@ body{
     align-items: stretch;
     align-content: stretch;
   }
-  .copywrite{
+  #copywrite {
     max-width: 70%;
   }
 }
 
-@media screen and (max-width: 774px){
-  #Welcome{
+@media screen and (max-width: 774px) {
+  #Welcome {
     display: flex;
     flex-direction: column;
     justify-content: center;
   }
-  #Welcome_Text{
-    flex: 1;
-  }
-  #Welcome_JakeHighFiving{
-    flex: 1;
+  #Welcome_JakeHighFiving {
     max-height: 450px;
   }
-  .veryTop{
+  #veryTop {
     display: flex;
   }
-  #threeBars{
+  #threeBars {
     color: rgb(111,111,111);
     z-index: 1;
     margin-top: 30px;
     width: 15%;
   }
-  .emptySpacing{
+  #emptySpacing {
     width: 15%;
   }
-  .navBar{
+  #navBar {
     display: none;
   }
-  .mobileNavOverlay{
+  #mobileNavOverlay {
     /* Height & width depends on how you want to reveal the overlay (see JS below) */
     height: 100%;
     width: 0;
@@ -177,15 +215,16 @@ body{
     overflow-x: hidden; /* Disable horizontal scroll */
     transition: 0.5s; /* 0.5 second transition effect to slide in or slide down the overlay (height or width, depending on reveal) */
   }
-  .mobileNavBar{
+  #mobileNavBar {
     position: relative;
-    top: 25%; /* 25% from the top */
+    top: 40%;
+    transform: translate(0, -50%);
     width: 100%; /* 100% width */
     text-align: center; /* Centered text/links */
     margin-top: 30px; /* 30px top margin to avoid conflict with the close button on smaller screens */
     text-transform: uppercase;
   }
-  .mobileNavOverlay a {
+  #mobileNavOverlay a {
     padding: 8px;
     text-decoration: none;
     font-size: 36px;
@@ -193,27 +232,36 @@ body{
     transition: 0.3s; /* Transition effects on hover (color) */
   }
   /* Position the close button (top right corner) */
-  .mobileNavOverlay .closebtn {
+  #mobileNavOverlay .closebtn {
     color: black;
     position: absolute;
     top: 20px;
     right: 45px;
     font-size: 60px;
 }
-  .CurrentNavPage{
+  .CurrentNavPage {
     font-weight: 900;
   }
-  #logo{
+  #logo {
     margin: 24px auto;
     max-height: 80px;
   }
-  #logoWrapper{
+  #logoWrapper {
     width: 70%
   }
-  .map{
-    width: 100%;
+  #rtbt_contents {
+    flex-direction: column;
+    align-items: center;
   }
-  .footer{
+  #rtbt_image {
+    max-width: 100%;
+    margin: 0 0 25px 0;
+    order: -1;
+  }
+  #map {
+    height: 320px;
+  }
+  footer {
     width:100%;
     text-align: center;
   }
