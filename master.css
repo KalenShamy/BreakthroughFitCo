@@ -29,7 +29,7 @@ body {
 }
 
 .centerBox {
-  margin: 0 auto;
+  margin: 0 auto 40px auto;
 }
 
 .CurrentNavPage {
@@ -51,7 +51,6 @@ body {
 }
 
 #Welcome {
-  margin: 0 auto 40px auto;
   background-color: black;
 }
 
@@ -62,9 +61,7 @@ body {
   font-weight: 400;
   line-height: 30px;
   text-align: center;
-  margin: auto;
-  padding-left: 25px;
-  padding-right: 25px;
+  margin: auto 24px;
 }
 
 #Welcome_JakeHighFiving {
@@ -74,7 +71,7 @@ body {
 
 #readytobreakthrough {
   background-color: rgb(22, 22, 22);
-  padding: 40px 0;
+  padding: 40px 0 0.02px 0;
   font-family: 'Source Sans Pro', arial, sans-serif;
   margin: 0 0 40px 0;
 }
@@ -99,7 +96,7 @@ body {
 }
 
 #map {
-  margin: 0 auto;
+  margin: 0 auto 40px 0;
   width: 100%;
 }
 #mapFrame {
@@ -107,14 +104,34 @@ body {
   height: 100%;
 }
 
+#social h2{
+  text-transform: uppercase;
+  font-family: "Source Sans Pro", arial, sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  letter-spacing: 2.25px;
+  line-height: 25.2px;
+  color: rgb(111, 111, 111);
+}
+
+#socials {
+  display: flex;
+  justify-content: center;
+}
+
+#socials a {
+  width: 96px;
+}
+
 footer {
   color: rgb(89,89,89);
   text-transform: uppercase;
+  font-family: 'Source Sans Pro', arial, sans-serif;
   font-size: 14px;
   letter-spacing: 1.162px;
   height: auto;   /* Height of the footer */
   line-height: 21px;
-  padding: 5% 0;
+  padding: 40px 0;
 }
 
 @media screen and (min-width: 775px) {
@@ -255,7 +272,7 @@ footer {
   }
   #rtbt_image {
     max-width: 100%;
-    margin: 0 0 25px 0;
+    margin: 0 0 24px 0;
     order: -1;
   }
   #map {
