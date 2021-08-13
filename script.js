@@ -7,3 +7,12 @@ function openNav() {
 function closeNav() {
   document.getElementById("mobileNavOverlay").style.width = "0%";
 }
+
+function closePopup() {
+  document.getElementById("popup").style["background-color"] = "rgba(0,0,0,0)";
+  document.getElementById("popupContents").style.width = "0%";
+  document.getElementById("popupCloseButton").style["font-size"] = "0px";
+  setTimeout(function(){
+    document.getElementById("popup").style.display = "none"
+  }, 500);
+}
