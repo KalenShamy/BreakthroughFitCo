@@ -67,11 +67,13 @@ body {
 }
 
 #popupBox {
+  display: table;
+  vertical-align: middle;
   transition: 0.5s;
   background-color: white;
-  max-width: 575px;
+  max-width: 750px;
   width: 70%;
-  height: min-content;
+  max-height: 95%;
   min-width: 312px;
   margin: auto;
   position: absolute;
