@@ -69,12 +69,14 @@ body {
 #popupBox {
   display: table;
   vertical-align: middle;
-  transition: 0.5s;
+  -webkit-transition: 0.5s ease;
+  -moz-transition: 0.5s ease;
+  -o-transition: 0.5s ease;
+  transition: 0.5s ease;
   background-color: white;
   max-width: 600px;
   width: 70%;
   max-height: 95%;
-  min-width: 312px;
   margin: auto;
   position: absolute;
   top: 50%;
@@ -103,6 +105,7 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
   max-height: 100%;
 }
 
