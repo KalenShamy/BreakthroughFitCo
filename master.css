@@ -71,7 +71,7 @@ body {
   background-color: white;
   max-width: 575px;
   width: 70%;
-  height: fit-content;
+  height: min-content;
   min-width: 312px;
   margin: auto;
   position: absolute;
