@@ -9,10 +9,5 @@ function closeNav() {
 }
 
 function closePopup() {
-  document.getElementById("popup").style["background-color"] = "rgba(0,0,0,0)";
-  document.getElementById("popupContents").style.width = "0%";
-  document.getElementById("popupCloseButton").style["font-size"] = "0px";
-  setTimeout(function(){
-    document.getElementById("popup").style.display = "none"
-  }, 500);
+  document.getElementById("popup").style.display = "none"
 }
