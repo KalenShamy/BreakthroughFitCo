@@ -202,6 +202,7 @@ body {
   margin: 0 auto 40px 0;
   width: 100%;
 }
+
 #mapFrame {
   width: 100%;
   height: 100%;
@@ -271,6 +272,117 @@ footer {
   height: auto;   /* Height of the footer */
   line-height: 21px;
   padding: 40px 0;
+}
+
+/* Services page */
+
+#servicesBanner {
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.24) 0%, rgba(0, 0, 0, 0.24) 100%), url("Pictures/MissingImage.jpg");
+  background-position: center;
+  background-size: contain;
+}
+
+#servicesBanner h1 {
+  font-family: "Playfair Display", serif;
+  letter-spacing: 1.085px;
+  line-height: 43.75px;
+  font-size: 36px;
+  font-weight: 400;
+  margin: 0;
+  padding: 72px 0;
+  text-align: center;
+  color: white;
+}
+
+#CAS {
+  padding: 40px 24px 91px 24px;;
+  text-align: center;
+}
+
+#CAS h4 {
+  color: rgb(24, 24, 24);
+  margin: 0 auto 24px auto;
+  font-family: "Source Sans Pro", arial, sans-serif;
+  font-size: 25px;
+  font-weight: 400;
+  letter-spacing: 1.125px;
+  line-height: 31.25px;
+}
+
+#CAS p {
+  color: rgb(94, 94, 94);
+  margin: 0 auto;
+  font-family: "Source Sans Pro", arial, sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  letter-spacing: normal;
+  line-height: 27px;
+}
+
+#services {
+  padding: 0 24px;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.service {
+  margin: 0 24px 48px 24px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: rgb(243, 243, 243);
+  align-items: center;
+}
+
+.service img {
+  width: 100%;
+  margin: 0 0 30px 0;
+  object-fit: cover;
+}
+
+.service h4 {
+  color: rgb(27, 27, 27);
+  text-align: center;
+  font-family: "Source Sans Pro", arial, sans-serif;
+  font-size: 25px;
+  font-weight: 400;
+  letter-spacing: 1.125px;
+  line-height: 31.25px;
+  margin: 0 0 24px 0;
+  padding: 0 32px;
+}
+
+.service p {
+  color: rgb(94, 94, 94);
+  text-align: center;
+  font-family: "Source Sans Pro", arial, sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 27px;
+  margin: 0 0 24px 0;
+  padding: 0 32px;
+}
+
+.service a {
+  transition: 0.3s;
+  background-color: rgb(111, 111, 111);
+  font-family: "Source Sans Pro", arial, sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  letter-spacing: 3.424px;
+  color: white;
+  padding: 8px 32px;
+  line-height: 40px;
+  text-transform: uppercase;
+  text-decoration: none;
+  margin: 0 0 32px 0;
+}
+
+.service a:hover {
+  box-shadow: 0 10px 10px -10px rgb(0 0 0 / 50%);
+  background-color: rgb(136, 136, 136)
 }
 
 /* Mobile */
@@ -365,6 +477,16 @@ footer {
     width: 75%;
     margin: 0 0 32px 0;
   }
+  #CAS h4 {
+    max-width: 100%;
+  }
+
+  #CAS p {
+    max-width: 100%;
+  }
+  .service {
+    max-width: 100%;
+  }
   footer {
     width:100%;
     text-align: center;
@@ -424,6 +546,16 @@ footer {
     width: 75%;
     margin: 0 0 32px 0;
   }
+  #CAS h4 {
+    max-width: 80%;
+  }
+
+  #CAS p {
+    max-width: 80%;
+  }
+  .service {
+    max-width: 43.115%;
+  }
   footer {
     width:100%;
     text-align: center;
@@ -444,6 +576,16 @@ footer {
   }
   .teamMemberText {
     margin: 0 24px 0 24px;
+  }
+  #CAS h4 {
+    max-width: 50%;
+  }
+
+  #CAS p {
+    max-width: 50%;
+  }
+  .service {
+    max-width: 27.775%;
   }
   footer {
     max-width: 91.5%;
