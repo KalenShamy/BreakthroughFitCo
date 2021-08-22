@@ -320,7 +320,6 @@ footer {
 }
 
 #services {
-  padding: 0 24px;
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
@@ -387,7 +386,7 @@ footer {
 
 /* Mobile */
 
-@media screen and (max-width: 744px) {
+@media screen and (max-width: 649px) {
   #Welcome {
     display: flex;
     flex-direction: column;
@@ -484,6 +483,9 @@ footer {
   #CAS p {
     max-width: 100%;
   }
+  #services {
+    margin: 0;
+  }
   .service {
     max-width: 100%;
   }
@@ -495,7 +497,7 @@ footer {
 
 /* Tablet */
 
-@media screen and (min-width: 745px) {
+@media screen and (min-width: 650px) and (max-width: 925px) {
   .centerBox {
     max-width: 95%;
     width: 1000px;
@@ -553,6 +555,10 @@ footer {
   #CAS p {
     max-width: 80%;
   }
+  #services {
+    max-width: 100%;
+    margin: 0;
+  }
   .service {
     max-width: 43.115%;
   }
@@ -564,14 +570,55 @@ footer {
 
 /* Computer */
 
-@media screen and (min-width: 924px) {
+@media screen and (min-width: 925px) {
+  .centerBox {
+    max-width: 95%;
+    width: 1000px;
+  }
+  #Welcome {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    align-items: stretch;
+    align-content: stretch;
+  }
+  #Welcome_JakeHighFiving {
+    width: 70%;
+  }
+  #threeBars {
+    display: none;
+  }
+  #logo {
+    margin: 0 auto;
+    margin-top: 56px;
+    max-height: 123px;
+  }
+  .CurrentNavPage {
+    padding-bottom: 4px;
+    border-bottom: 1px solid rgb(111,111,111);
+    color: rgb(21,21,21);
+  }
+  #mobileNavOverlay {
+    display: none;
+  }
+  #rtbt_contents{
+    justify-content: space-evenly;
+    align-items: center;
+  }
+  #rtbt_image {
+    min-width: 320px;
+    margin: 0 0 0 25px;
+  }
+  #map {
+    height: 420px;
+  }
   .teamMember {
     flex-direction: row;
     align-items: flex-start;
   }
   .teamMember img {
-    width: 280px;
-    height: 420px;
+    width: 350px;
     margin: 0 24px 0 24px;
   }
   .teamMemberText {
