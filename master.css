@@ -36,6 +36,10 @@ body {
   margin: 0 auto 40px auto;
 }
 
+.centerSmallBox {
+  margin: 0 auto 40px auto;
+}
+
 .CurrentNavPage {
   text-decoration: none;
   color: rgb(21,21,21);
@@ -52,6 +56,27 @@ body {
 
 .NavLink:hover {
   color: rgb(111,111,111)
+}
+
+.greyButton {
+  display: inline-flex;
+  transition: 0.3s;
+  background-color: rgb(111, 111, 111);
+  font-family: "Source Sans Pro", arial, sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  letter-spacing: 3.424px;
+  color: white;
+  padding: 8px 32px;
+  line-height: 40px;
+  text-transform: uppercase;
+  text-decoration: none;
+  margin: 0 0 32px 0;
+}
+
+.greyButton:hover {
+  box-shadow: 0 10px 10px -10px rgb(0 0 0 / 50%);
+  background-color: rgb(136, 136, 136)
 }
 
 /* Home page */
@@ -324,15 +349,17 @@ footer {
   flex-wrap: wrap;
   flex-direction: row;
   justify-content: center;
+  align-content: center;
+  align-items: stretch;
 }
 
 .service {
   margin: 0 24px 48px 24px;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
   background-color: rgb(243, 243, 243);
   align-items: center;
+  justify-content: flex-start;
 }
 
 .service img {
@@ -364,24 +391,98 @@ footer {
   padding: 0 32px;
 }
 
-.service a {
-  transition: 0.3s;
-  background-color: rgb(111, 111, 111);
+/* IGNITE page */
+
+.igniteHeader {
+  background-color: rgb(22, 22, 22);
   font-family: "Source Sans Pro", arial, sans-serif;
-  font-weight: 700;
-  font-size: 16px;
-  letter-spacing: 3.424px;
-  color: white;
-  padding: 8px 32px;
-  line-height: 40px;
-  text-transform: uppercase;
-  text-decoration: none;
-  margin: 0 0 32px 0;
+  text-align: center;
+  padding: 40px 0;
+  margin: 0 0 40px 0;
 }
 
-.service a:hover {
-  box-shadow: 0 10px 10px -10px rgb(0 0 0 / 50%);
-  background-color: rgb(136, 136, 136)
+.igniteHeader h1 {
+  color: rgb(247, 247, 247);
+  font-weight: 400;
+  margin: 0 0 24px 0;
+  font-size: 44px;
+  line-height: 55px;
+  letter-spacing: 1.98px;
+}
+
+.igniteHeader h2 {
+  color: rgb(247, 247, 247);
+  font-weight: 400;
+  margin: 0 0 24px 0;
+  font-size: 37px;
+  line-height: 46.25px;
+  letter-spacing: 1.665px;
+}
+
+.igniteHeader p {
+  color: rgb(164, 164, 164);
+  font-size: 18px;
+  line-height: 27px;
+}
+
+.igniteHeader span {
+  color: rgb(164, 164, 164);
+  font-size: 21px;
+  line-height: 31.5px;
+}
+
+.igniteHeader #endItem {
+  margin-bottom: 0;
+}
+
+#igniteInfo {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.igniteBox {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 48px;
+  padding: 32px 0;
+  background-color: rgb(111, 111, 111);
+  align-items: center;
+}
+
+.igniteBox img {
+  height: 300px;
+  max-width: 90%;
+  margin: 0 0 30px 0;
+  object-fit: cover;
+}
+
+.igniteBox h4 {
+  color: white;
+  text-align: center;
+  font-family: "Source Sans Pro", arial, sans-serif;
+  font-size: 51px;
+  font-weight: 400;
+  letter-spacing: 2.295px;
+  line-height: 63.75px;
+  margin: 0 0 24px 0;
+  padding: 0 32px;
+}
+
+.igniteBox p {
+  color: white;
+  text-align: center;
+  font-family: "Source Sans Pro", arial, sans-serif;
+  font-size: 21px;
+  font-weight: 400;
+  line-height: 31.5px;
+  margin: 0 0 24px 0;
+  padding: 0 32px;
+}
+
+.igniteBox #endItem {
+  margin-bottom: 0;
 }
 
 /* Mobile */
@@ -489,6 +590,9 @@ footer {
   .service {
     max-width: 100%;
   }
+  .igniteBox {
+    max-width: 100%;
+  }
   footer {
     width:100%;
     text-align: center;
@@ -499,6 +603,10 @@ footer {
 
 @media screen and (min-width: 650px) and (max-width: 925px) {
   .centerBox {
+    max-width: 95%;
+    width: 1250px;
+  }
+  .centerSmallBox {
     max-width: 95%;
     width: 1000px;
   }
@@ -562,6 +670,9 @@ footer {
   .service {
     max-width: 43.115%;
   }
+  .igniteBox {
+    max-width: 100%;
+  }
   footer {
     width:100%;
     text-align: center;
@@ -572,6 +683,10 @@ footer {
 
 @media screen and (min-width: 925px) {
   .centerBox {
+    max-width: 95%;
+    width: 1250px;
+  }
+  .centerSmallBox {
     max-width: 95%;
     width: 1000px;
   }
@@ -633,6 +748,9 @@ footer {
   }
   .service {
     max-width: 27.775%;
+  }
+  .igniteBox {
+    max-width: 48.25%;
   }
   footer {
     max-width: 91.5%;
