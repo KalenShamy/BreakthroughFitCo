@@ -289,13 +289,13 @@ body {
 }
 
 footer {
-  color: rgb(89,89,89);
+  color: rgb(125, 125, 125);
   text-transform: uppercase;
   font-family: 'Source Sans Pro', arial, sans-serif;
-  font-size: 14px;
+  font-size: 13px;
   letter-spacing: 1.162px;
   height: auto;   /* Height of the footer */
-  line-height: 21px;
+  line-height: 30px;
   padding: 40px 0;
 }
 
