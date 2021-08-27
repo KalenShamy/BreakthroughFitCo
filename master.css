@@ -532,11 +532,16 @@ footer {
   font-weight: 400;
   letter-spacing: 1.125px;
   line-height: 21.25px;
-  margin-top: 2em;
+  margin-top: 1.5em;
   margin-bottom: 0;
 }
 
 /* Mobile */
+
+@media screen and (max-width: 445px) {
+  #igniteDirections {
+    margin-top: 15px;
+  }
 
 @media screen and (max-width: 649px) {
   #Welcome {
