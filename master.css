@@ -397,7 +397,7 @@ footer {
 
 /* IGNITE page */
 
-.igniteHeader {
+.igniteBanner {
   background-color: rgb(22, 22, 22);
   font-family: "Source Sans Pro", arial, sans-serif;
   text-align: center;
@@ -405,7 +405,7 @@ footer {
   margin: 0 0 40px 0;
 }
 
-.igniteHeader h1 {
+.igniteBanner h1 {
   color: rgb(247, 247, 247);
   font-weight: 400;
   margin: 0 0 24px 0;
@@ -414,7 +414,7 @@ footer {
   letter-spacing: 1.98px;
 }
 
-.igniteHeader h2 {
+.igniteBanner h2 {
   color: rgb(247, 247, 247);
   font-weight: 400;
   margin: 0 0 24px 0;
@@ -423,19 +423,19 @@ footer {
   letter-spacing: 1.665px;
 }
 
-.igniteHeader p {
+.igniteBanner p {
   color: rgb(164, 164, 164);
   font-size: 18px;
   line-height: 27px;
 }
 
-.igniteHeader span {
+.igniteBanner span {
   color: rgb(164, 164, 164);
   font-size: 21px;
   line-height: 31.5px;
 }
 
-.igniteHeader #endItem {
+.igniteBanner #endItem {
   margin-bottom: 0;
 }
 
