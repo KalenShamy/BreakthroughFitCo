@@ -65,16 +65,16 @@ body {
 .greyButton {
   display: inline-flex;
   transition: 0.3s;
-  background-color: rgb(111, 111, 111);
-  font-family: "Source Sans Pro", arial, sans-serif;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: rgb(128, 128, 128);
+  padding-bottom: 4px;
+  border-bottom: solid 1px;
+  font-family: 'Source Sans Pro', arial, sans-serif;
   font-weight: 700;
   font-size: 16px;
   letter-spacing: 3.424px;
-  color: white;
-  padding: 8px 32px;
-  line-height: 40px;
-  text-transform: uppercase;
-  text-decoration: none;
+  line-height: 32px;
   margin: 0 0 32px 0;
 }
 
@@ -271,7 +271,23 @@ body {
   width: 100%;
   padding: 40px 0 40px 0;
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
+}
+
+.teamMember img {
+  border-radius: 50%;
+}
+
+.teamMember a:hover {
+  color: rgb(191, 191, 191);
+}
+
+.teamMember a:active {
+  color: rgb(219, 219, 219);
+}
+
+.teamMember p {
+  margin: 0 0 24px 0;
 }
 
 .teamMemberText {
@@ -282,6 +298,7 @@ body {
   font-size: 18px;
   line-height: 27px;
   color: rgb(164, 164, 164);
+  align-items: flex-start;
 }
 
 .teamMemberName {
@@ -290,6 +307,60 @@ body {
   line-height: 31.25px;
   font-weight: 400;
   margin: 0 0 24px 0;
+}
+
+#partnersTitle {
+  color: rgb(111,111,111);
+  font-family: 'Source Sans Pro', arial, sans-serif;
+  font-weight: 400;
+  letter-spacing: 1.484px;
+}
+
+#partners {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+  align-content: center;
+  align-items: stretch;
+}
+
+.partner {
+  margin: 0 24px 48px 24px;
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(243, 243, 243);
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.partner img {
+  width: 100%;
+  margin: 0 0 30px 0;
+  object-fit: cover;
+}
+
+.partner h4 {
+  color: rgb(27, 27, 27);
+  text-align: center;
+  font-family: "Source Sans Pro", arial, sans-serif;
+  font-size: 25px;
+  font-weight: 400;
+  letter-spacing: 1.125px;
+  line-height: 31.25px;
+  margin: 0 0 24px 0;
+  padding: 0 32px;
+}
+
+.partner p {
+  color: rgb(94, 94, 94);
+  text-align: center;
+  font-family: "Source Sans Pro", arial, sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 27px;
+  margin: 0 0 24px 0;
+  padding: 0 32px;
 }
 
 footer {
@@ -633,6 +704,12 @@ footer {
     width: 75%;
     margin: 0 0 32px 0;
   }
+  #partners {
+    margin: 0;
+  }
+  .partner {
+    width: 100%;
+  }
   #CAS h4 {
     max-width: 100%;
   }
@@ -726,6 +803,13 @@ footer {
     width: 75%;
     margin: 0 0 32px 0;
   }
+  #partners {
+    max-width: 100%;
+    margin: 0;
+  }
+  .partner {
+    width: 42.4195%;
+  }
   #CAS h4 {
     max-width: 80%;
   }
@@ -738,7 +822,7 @@ footer {
     margin: 0;
   }
   .service {
-    max-width: 42.4195%;
+    width: 42.4195%;
   }
   .igniteBox {
     max-width: 100%;
@@ -817,11 +901,13 @@ footer {
     align-items: flex-start;
   }
   .teamMember img {
-    width: 350px;
     margin: 0 24px 0 24px;
   }
   .teamMemberText {
     margin: 0 24px 0 24px;
+  }
+  .partner {
+    width: 27.775%;
   }
   #CAS h4 {
     max-width: 50%;
@@ -831,7 +917,7 @@ footer {
     max-width: 50%;
   }
   .service {
-    max-width: 27.775%;
+    width: 27.775%;
   }
   .igniteBox {
     max-width: 48.25%;
