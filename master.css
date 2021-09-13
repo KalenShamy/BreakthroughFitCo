@@ -86,6 +86,30 @@ body {
   color: rgb(219, 219, 219);
 }
 
+.background_greyButton {
+  display: inline-flex;
+  transition: 0.3s;
+  background-color: rgb(111, 111, 111);
+  font-family: "Source Sans Pro", arial, sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  letter-spacing: 3.424px;
+  color: white;
+  padding: 8px 32px;
+  line-height: 40px;
+  text-transform: uppercase;
+  text-decoration: none;
+  margin: 0 0 32px 0;
+}
+
+.background_greyButton:hover {
+  color: rgb(191, 191, 191);
+}
+
+.background_greyButton:active {
+  color: rgb(219, 219, 219);
+}
+
 /* Home page */
 
 #popup {
@@ -900,6 +924,8 @@ footer {
   }
   .teamMember img {
     margin: 0 24px 0 24px;
+    width: 400px;
+    height: 400px;
   }
   .teamMemberText {
     margin: 0 24px 0 24px;
