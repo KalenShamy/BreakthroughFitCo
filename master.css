@@ -469,7 +469,7 @@ footer {
   flex-direction: column;
   background-color: rgb(243, 243, 243);
   align-items: center;
-  justify-content: flex-start;
+  justify-content: space-between;
 }
 
 .service img {
@@ -499,6 +499,10 @@ footer {
   line-height: 27px;
   margin: 0 0 24px 0;
   padding: 0 32px;
+}
+
+.service a {
+  margin-top: 25px;
 }
 
 /* IGNITE page */
