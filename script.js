@@ -1,5 +1,5 @@
 
-/* Made by Kalen Shamy */
+/* Created by Kalen Shamy */
 
 function openNav() {
   document.getElementById("mobileNavOverlay").style.width = "100%";
