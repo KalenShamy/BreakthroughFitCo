@@ -839,7 +839,8 @@ footer {
     align-items: center;
   }
   #rtbt_image {
-    min-width: 320px;
+    max-width: 50%;
+    min-width: 350px;
     margin: 0 0 0 25px;
   }
   #map {
@@ -940,7 +941,8 @@ footer {
     align-items: center;
   }
   #rtbt_image {
-    min-width: 320px;
+    min-width: 50%;
+    max-width: 500px;
     margin: 0 0 0 25px;
   }
   #map {
