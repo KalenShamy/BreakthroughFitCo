@@ -35,33 +35,16 @@ body {
   padding: 0 15px;
 }
 
-.centerBox {
+.centerBox, .centerMediumBox, .centerSmallBox {
   margin: 0 auto 40px auto;
 }
 
-.centerMediumBox {
-  margin: 0 auto 40px auto;
-}
-
-.centerSmallBox {
-  margin: 0 auto 40px auto;
-}
-
-.CurrentNavPage {
+.CurrentNavPage, .NavLink {
   text-decoration: none;
   color: rgb(21,21,21);
 }
 
-.CurrentNavPage:hover {
-  color: rgb(111,111,111)
-}
-
-.NavLink {
-  text-decoration: none;
-  color: rgb(21,21,21);
-}
-
-.NavLink:hover {
+.CurrentNavPage:hover, .NavLink:hover {
   color: rgb(111,111,111)
 }
 
@@ -81,14 +64,6 @@ body {
   margin: 0 0 32px 0;
 }
 
-.greyButton:hover {
-  color: rgb(191, 191, 191);
-}
-
-.greyButton:active {
-  color: rgb(219, 219, 219);
-}
-
 .background_greyButton {
   display: inline-flex;
   transition: 0.3s;
@@ -105,11 +80,11 @@ body {
   margin: 0 0 32px 0;
 }
 
-.background_greyButton:hover {
+.greyButton:hover, .background_greyButton:hover {
   color: rgb(191, 191, 191);
 }
 
-.background_greyButton:active {
+.greyButton:active, .background_greyButton:active {
   color: rgb(219, 219, 219);
 }
 
@@ -688,34 +663,33 @@ footer {
     display: none;
   }
   #mobileNavOverlay {
-    /* Height & width depends on how you want to reveal the overlay (see JS below) */
     height: 100%;
     width: 0;
-    position: fixed; /* Stay in place */
-    z-index: 1; /* Sit on top */
+    position: fixed;
+    z-index: 1;
     left: 0;
     top: 0;
     background-color: rgb(243,243,243);
-    overflow-x: hidden; /* Disable horizontal scroll */
-    transition: 0.5s; /* 0.5 second transition effect to slide in or slide down the overlay (height or width, depending on reveal) */
+    overflow-x: hidden;
+    transition: 0.5s;
   }
   #mobileNavBar {
     position: relative;
     top: 40%;
     transform: translate(0, -50%);
-    width: 100%; /* 100% width */
-    text-align: center; /* Centered text/links */
-    margin-top: 30px; /* 30px top margin to avoid conflict with the close button on smaller screens */
+    width: 100%;
+    text-align: center;
+    margin-top: 30px;
     text-transform: uppercase;
   }
   #mobileNavOverlay a {
     padding: 8px;
     text-decoration: none;
     font-size: 36px;
-    display: block; /* Display block instead of inline */
-    transition: 0.3s; /* Transition effects on hover (color) */
+    display: block;
+    transition: 0.3s;
   }
-  /* Position the close button (top right corner) */
+  
   #mobileNavOverlay #closebtn {
     color: black;
     position: absolute;
@@ -754,26 +728,13 @@ footer {
     width: 75%;
     margin: 0 0 32px 0;
   }
-  #partners {
+  #partners, #services {
     margin: 0;
   }
   .partner {
     width: 100%;
   }
-  #CAS h4 {
-    max-width: 100%;
-  }
-
-  #CAS p {
-    max-width: 100%;
-  }
-  #services {
-    margin: 0;
-  }
-  .service {
-    max-width: 100%;
-  }
-  .igniteBox {
+  #CAS h4, #CAS p, .service, .igniteBox {
     max-width: 100%;
   }
   #igniteSchedule div {
@@ -787,7 +748,7 @@ footer {
     justify-content: space-between;
   }
   footer {
-    width:100%;
+    width: 100%;
     text-align: center;
   }
 }
@@ -858,22 +819,15 @@ footer {
     max-width: 100%;
     margin: 0;
   }
-  .partner {
+  .partner, .service {
     width: 42.4195%;
   }
-  #CAS h4 {
-    max-width: 80%;
-  }
-
-  #CAS p {
+  #CAS h4, #CAS p {
     max-width: 80%;
   }
   #services {
     max-width: 100%;
     margin: 0;
-  }
-  .service {
-    width: 42.4195%;
   }
   .igniteBox {
     max-width: 100%;
@@ -920,7 +874,7 @@ footer {
   #Welcome_JakeHighFiving {
     width: 70%;
   }
-  #threeBars {
+  #threeBars, #mobileNavOverlay {
     display: none;
   }
   #logo {
@@ -932,9 +886,6 @@ footer {
     padding-bottom: 4px;
     border-bottom: 1px solid rgb(111,111,111);
     color: rgb(21,21,21);
-  }
-  #mobileNavOverlay {
-    display: none;
   }
   #rtbt_contents{
     justify-content: space-evenly;
@@ -963,11 +914,7 @@ footer {
   .partner {
     width: 27.775%;
   }
-  #CAS h4 {
-    max-width: 50%;
-  }
-
-  #CAS p {
+  #CAS h4, #CAS p {
     max-width: 50%;
   }
   .service {
