@@ -21,7 +21,7 @@ if (window.location.pathname.indexOf("about") != -1) {
     let memberDiv = "";
     memberDiv += "<!-- " + staff[i]["name"] + "-->\n";
     memberDiv += "<div class=\"teamMember\">\n";
-    memberDiv += "<img loading=\"lazy\" src=\"Pictures/" + staff[i]["img"] + "\">\n";
+    memberDiv += "<img loading=\"lazy\" alt=\"\" src=\"Pictures/" + staff[i]["img"] + "\">\n";
     memberDiv += "<div class=\"teamMemberText\">\n";
     memberDiv += "<h1 class=\"teamMemberName\">" + staff[i]["name"] + " - " + staff[i]["title"] + "</h1>\n";
     memberDiv += "<p>" + staff[i]["bio"] + "</p>\n";
