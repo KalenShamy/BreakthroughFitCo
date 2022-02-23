@@ -741,7 +741,10 @@ footer {
     flex-direction: column;
   }
   #igniteSchedule span {
-    width: 95%;
+    width: 90%;
+    width: -moz-available;          /* For Mozzila */
+    width: -webkit-fill-available;  /* For Chrome */
+    width: stretch;                 /* Unprefixed */
     margin: auto;
     display: flex;
     flex-direction: row;
