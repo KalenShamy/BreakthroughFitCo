@@ -348,7 +348,7 @@ body {
   flex-direction: column;
   background-color: rgb(243, 243, 243);
   align-items: center;
-  justify-content: flex-start;
+  justify-content: space-between;
 }
 
 .partner img {
