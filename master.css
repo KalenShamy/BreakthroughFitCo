@@ -221,7 +221,7 @@ body {
   font-weight: 800;
 }
 
-#Welcome_JakeHighFiving {
+#Welcome_Image {
   object-fit: cover;
   max-height: 1000px;
 }
@@ -644,7 +644,7 @@ footer {
     flex-direction: column;
     justify-content: center;
   }
-  #Welcome_JakeHighFiving {
+  #Welcome_Image {
     max-height: 450px;
   }
   #veryTop {
@@ -779,7 +779,7 @@ footer {
     align-items: stretch;
     align-content: stretch;
   }
-  #Welcome_JakeHighFiving {
+  #Welcome_Image {
     min-width: 50%;
   }
   #threeBars {
@@ -874,7 +874,7 @@ footer {
     align-items: stretch;
     align-content: stretch;
   }
-  #Welcome_JakeHighFiving {
+  #Welcome_Image {
     width: 70%;
   }
   #threeBars, #mobileNavOverlay {
