@@ -42,13 +42,6 @@ var staff = [
     ]
   },
   {
-    "name": "Michelle Pachon",
-    "title": "Massage Therapist",
-    "img": "MichellePachon.jpg",
-    "email": "michellesmassages14@gmail.com",
-    "bio": `Meet Michelle Pachon, our NYS Licensed Massage Therapist and 200-hour Yoga Alliance Certified Instructor! Michelle has been a practicing Massage Therapist since 2015 and has extensive background in different restorative and regenerative massage styles such as Swedish, Myofascial release, Sport, Lymphatic, Prenatal, and Geriatric massage. She’s also known for her amazing Hatha, Power flow, Vinyasa flow and deep stretch yoga classes. Michelle is the best addition to your self-care routine!`,
-  },
-  {
     "name": "Taje Champagnie",
     "title": "Coach",
     "img": "TajeChampagnie.jpg",
@@ -56,6 +49,13 @@ var staff = [
     "bio": `As a professional with 6 years of training experience, Taje has come to the understanding that the greatest limiter is choice. He is a NASM certified Personal Trainer and specializes in balance and stability. Regardless of client goals, balance is the lowest common denominator, so his specialty is broad enough to facilitate a variety of physiological needs. He does this in order to remove as many obstacles as possible for his clients so that they get closer to that great limiter; choice. Once he helps his clients get there, they feel secure enough to make the decisions they need to regain, retain, or expand their health. A quote he lives by is:
 
 "Those who ask for help -earnestly- deserve help."`,
+  },
+  {
+    "name": "Michelle Pachon",
+    "title": "Massage Therapist",
+    "img": "MichellePachon.jpg",
+    "email": "michellesmassages14@gmail.com",
+    "bio": `Meet Michelle Pachon, our NYS Licensed Massage Therapist and 200-hour Yoga Alliance Certified Instructor! Michelle has been a practicing Massage Therapist since 2015 and has extensive background in different restorative and regenerative massage styles such as Swedish, Myofascial release, Sport, Lymphatic, Prenatal, and Geriatric massage. She’s also known for her amazing Hatha, Power flow, Vinyasa flow and deep stretch yoga classes. Michelle is the best addition to your self-care routine!`,
   },
 ]
 
