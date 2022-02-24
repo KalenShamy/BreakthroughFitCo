@@ -645,7 +645,6 @@ footer {
     justify-content: center;
   }
   #Welcome_Image {
-    object-fit: contain;
     max-height: 450px;
   }
   #veryTop {
