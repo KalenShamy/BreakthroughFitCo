@@ -222,7 +222,7 @@ body {
 }
 
 #Welcome_Image {
-  object-fit: cover;
+  object-fit: contain;
   max-height: 1000px;
 }
 
