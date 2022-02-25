@@ -645,7 +645,7 @@ footer {
     justify-content: center;
   }
   #Welcome_Image {
-    height: min-content;
+    max-height: min-content;
   }
   #veryTop {
     display: flex;
