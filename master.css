@@ -647,6 +647,7 @@ footer {
   }
   #Welcome_Image {
     height: 60%;
+    max-height: 360px;
   }
   #veryTop {
     display: flex;
