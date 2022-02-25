@@ -644,6 +644,7 @@ footer {
     flex-direction: column;
     justify-content: center;
     height: 600px;
+    overflow: hidden;
   }
   #Welcome_Image {
     height: 60%;
