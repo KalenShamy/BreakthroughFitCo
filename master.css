@@ -779,6 +779,7 @@ footer {
   }
   #Welcome_Image {
     min-width: 50%;
+    object-fit: cover;
   }
   #threeBars {
     display: none;
