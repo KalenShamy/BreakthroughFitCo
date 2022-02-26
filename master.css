@@ -222,7 +222,7 @@ body {
 }
 
 #Welcome_Image {
-  object-fit: cover;
+  max-width: 100%;
   max-height: 1000px;
 }
 
@@ -645,10 +645,6 @@ footer {
     justify-content: center;
     height: 600px;
     overflow: hidden;
-  }
-  #Welcome_Image {
-    height: 60%;
-    max-height: 360px;
   }
   #veryTop {
     display: flex;
