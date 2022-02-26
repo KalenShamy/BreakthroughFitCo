@@ -643,7 +643,6 @@ footer {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    height: 600px;
     overflow: hidden;
   }
   #veryTop {
