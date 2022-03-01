@@ -126,7 +126,7 @@ var dadJokes = [
   ["What did the ocean say to the beach?", "Nothing, it just waved!"],
   ["What do you call a sleeping bull?", "A bulldozer!"],
   ["How do you throw a party in outer space?", "You planet!"],
-  ["What do you say to a rabbit on its birthday?", "Hoppy Birthday!"],
+  ["What do you say to a rabbit on its birthday?", "Hoppy birthday!"],
   ["What do you call a fake noodle?", "An impasta!"],
 ];
 
