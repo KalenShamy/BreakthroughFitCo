@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+
+<!-- Made By Kalen Shamy -->
+
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>404 Page Not Found - BreakthroughFitCo</title>
+    <link rel="stylesheet" href="master.css">
+    <link rel="icon" href="Pictures/Icon.jpg">
+    <script src="dadJokes.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="404 - Breakthrough Fit Co">
+    <meta property="og:url" content="https://breakthroughfitco.com">
+    <meta property="og:image" content="Pictures/JakeHighFiving.jpg">
+    <meta property="og:locale" content="en_US">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="404 - Breakthrough Fit Co">
+    <meta name="twitter:description" content="Welcome to Breakthrough Fit Co">
+    <meta name="twitter:image" content="Pictures/JakeHighFiving.jpg">
+    <meta name="twitter:image:alt" content="Breakthrough Fit Co">
+    <meta name="theme-color" content="#6F6F6F">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@800&display=swap" rel="stylesheet">
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-S0CBEZDH63"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-S0CBEZDH63');
+    </script>
+
+    <!-- 404 styling (CSS) -->
+    <style media="screen">
+      #p404_body {
+        margin: auto;
+        width: 75%;
+        max-width: 750px;
+        background: rgb(25, 25, 25);
+        padding: 25px;
+        border-radius: 25px;
+        font-family: sans-serif;
+        color: white;
+      }
+
+      #p404_body h1 {
+        margin-top: 0;
+      }
+
+      #dadJoke {
+        background: rgb(255, 200, 150);
+        border-radius: 25px;
+        padding: 26px;
+        box-shadow: 2px 5px rgb(250, 165, 30);
+        border: rgb(250, 165, 30) 2px solid;
+        color: black;
+      }
+
+      #djLine {
+        margin-top: 0;
+        font-size: 20px;
+      }
+
+      #djAnswer {
+        font-size: 18px;
+        margin-bottom: 0;
+        text-decoration: underline;
+      }
+
+      #submitJoke {
+        margin-bottom: 0;
+      }
+
+      a {
+        color: lightpink;
+        font-weight: bold;
+        text-decoration: none;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <div id="veryTop">
+        <span onclick="openNav()" id="threeBars">
+          <svg viewBox="0 0 24 24" fill="currentColor" style="width: 35px; position: relative; left: 12px;">
+            <path fill-rule="evenodd" d="M19 8H5a1 1 0 1 1 0-2h14a1 1 0 0 1 0 2zm0 5.097H5a1 1 0 1 1 0-2h14a1 1 0 1 1 0 2zm0 5.25H5a1 1 0 1 1 0-2h14a1 1 0 1 1 0 2z"></path>
+          </svg>
+        </span>
+        <a href="./" id="logoWrapper"><img loading="lazy" src="Pictures/BFC-logo.jpg" id="logo"></a>
+        <div id="emptySpacing"></div>
+      </div>
+      <div id="navBar">
+        <a href="./" class="NavLink">Home</a>
+        <a href="about" class="NavLink">About</a>
+        <a href="services" class="NavLink">Services</a>
+        <a href="ignite" class="NavLink">Ignite</a>
+        <a href="https://clients.mindbodyonline.com/ASP/su1.asp?studioid=5721621" class="NavLink" target="_blank">Client Portal</a>
+      </div>
+      <div id="mobileNavOverlay">
+        <!-- Button to close the overlay navigation -->
+        <a href="javascript:void(0)" id="closebtn" onclick="closeNav()">&times;</a>
+        <div id="mobileNavBar">
+          <a href="./" class="NavLink">Home</a>
+          <a href="about" class="NavLink">About</a>
+          <a href="services" class="NavLink">Services</a>
+          <a href="ignite" class="NavLink">Ignite</a>
+          <a href="https://clients.mindbodyonline.com/ASP/su1.asp?studioid=5721621" class="NavLink" target="_blank">Client Portal</a>
+        </div>
+      </div>
+    </header>
+    <div id="p404_body" style="">
+      <h1>Sorry, we couldn't find that page :(</h1>
+      <h2>But here's a fun dad joke!</h2>
+      <div id="dadJoke">
+        <p id="djLine">First Line</p>
+        <p id="djAnswer">Second Line</p>
+      </div>
+      <p id="submitJoke">Want to submit one? Send it <a href="mailto:jake@breakthroughfitco.com?subject=Dad%20Joke%20Recommendation&body=Hey%21%20Here%27s%20a%20Dad%20Joke%20recommendation%20for%20you%21%0A%0AJoke%3A%20%22%22" target="_blank">here!</a></p>
+    </div>
+    <footer>
+      <p id="copywrite">Copyright © 2021 Breakghrough Fit Co - All Rights Reserved.</p>
+      <p id="credit">Created by Kalen Shamy</p>
+    </footer>
+  </body>
+</html>
