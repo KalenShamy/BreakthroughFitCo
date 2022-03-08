@@ -106,6 +106,17 @@
         background-color: white;
       }
     </style>
+
+    <script type="text/javascript">
+      function imageChange(num) {
+        for (let i = 1; i <= 7; i++) {
+          document.getElementById("WB" + i).style.backgroundColor = "darkgrey";
+          document.getElementById("WI" + i).style.display = "none";
+        }
+        document.getElementById("WB" + num).style.backgroundColor = "lightgrey";
+        document.getElementById("WI" + num).style.display = "block";
+      }
+    </script>
   </head>
   <body>
     <header>
