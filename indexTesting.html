@@ -55,6 +55,57 @@
             y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
         })(window, document, "clarity", "script", "9b3294agrv");
     </script>
+
+    <style media="screen">
+      #Welcome {
+        background: radial-gradient(circle, rgba(0,0,0,0.75) 0%, rgba(0,0,0,0.75) 64px, rgba(0,0,0, 0.25) 50%, rgba(255,255,255,0) 100%);
+        flex-direction: column;
+        position: relative;
+        overflow: hidden;
+      }
+      #Welcome img {
+        width: 100%;
+        z-index: -1;
+      }
+      #Welcome_Text {
+        padding: 25% 50%;
+        margin: 0;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        line-height: 1.5em;
+      }
+      .SlideshowSkipButtons {
+        background-color: grey;
+        height: 25px;
+      }
+      .SlideshowSkipButtons div {
+        display: flex;
+        justify-content: center;
+      }
+      .SlideshowSkipButtons a {
+        display: block;
+        width: 15px;
+        height: 15px;
+        border-radius: 100%;
+        margin: 5px 2.5px;
+        transition: 1s;
+        z-index: 0;
+      }
+      #WB1 {
+        background-color: lightgrey;
+      }
+      #WB2, #WB3, #WB4, #WB5, #WB6, #WB7 {
+        background-color: darkgrey;
+      }
+      #WI2, #WI3, #WI4, #WI5, #WI6, #WI7 {
+        display: none;
+      }
+      #WB1:hover, #WB2:hover, #WB3:hover, #WB4:hover, #WB5:hover, #WB6:hover, #WB7:hover {
+        background-color: white;
+      }
+    </style>
   </head>
   <body>
     <header>
@@ -86,12 +137,6 @@
       </div>
     </header>
     <div class="padder"> <!-- Padder for welcome box -->
-      <div id="Welcome" class="centerBox" style="background: radial-gradient(circle, rgba(0,0,0,0.75) 0%, rgba(0,0,0,0.75) 64px, rgba(0,0,0, 0.25) 50%, rgba(255,255,255,0) 100%);flex-direction:column;position:relative;overflow:hidden;">
-        <img src="Pictures/WelcomeImage.jpg" alt="Staff and clients posing" id="Welcome_Image" style="width:100%;z-index:-1;">
-        <p id="Welcome_Text" style="padding:25% 50%;margin:0;position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);">Welcome to Breakthrough<br>Fit Co!</p>
-        <div style="background-color:grey;height:25px;">
-          <div style="display:flex;justify-content:center;">
-            <a onclick="imageChange(1)" style="display:block;width:15px;height:15px;border-radius:100%;background-color:white;margin:5px 2.5px"></a>
           </div>
         </div>
       </div>
