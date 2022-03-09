@@ -113,6 +113,11 @@
       }
     </style>
     <script type="text/javascript">
+      function sleep(ms) {
+        return new Promise(resolve => setTimeout(resolve, ms));
+      }
+
+      var currentImg = 1;
       function imageChange(num) {
         for (let i = 1; i <= 7; i++) {
           document.getElementById("WB" + i).style.backgroundColor = "darkgrey";
