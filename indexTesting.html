@@ -89,7 +89,7 @@
         width: 15px;
         height: 15px;
         border-radius: 100%;
-        margin: 5px 2.5px;
+        margin: 5px 5px;
         transition: 1s;
         z-index: 0;
       }
@@ -105,8 +105,13 @@
       #WB1:hover, #WB2:hover, #WB3:hover, #WB4:hover, #WB5:hover, #WB6:hover, #WB7:hover {
         background-color: white;
       }
-    </style>
 
+      @media screen and (max-width: 925px) {
+        .SlideshowSkipButtons a {
+          margin: 5px 15px;
+        }
+      }
+    </style>
     <script type="text/javascript">
       function imageChange(num) {
         for (let i = 1; i <= 7; i++) {
