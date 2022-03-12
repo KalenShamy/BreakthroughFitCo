@@ -68,6 +68,7 @@
       #Welcome img {
         width: 100%;
         z-index: -1;
+        transition: 0.5s;
       }
       #Welcome_Text {
         padding: 25% 50%;
@@ -92,7 +93,7 @@
         height: 15px;
         border-radius: 100%;
         margin: 5px 5px;
-        transition: 1s;
+        transition: 0.5s;
         z-index: 0;
       }
       #WB1 {
@@ -120,15 +121,21 @@
       }
 
       var currentImg = 1;
-      function imageChange(num) {
+      async function imageChange(num) {
         if (num == currentImg) return;
-        currentImg = num;
-        for (let i = 1; i <= 7; i++) {
-          document.getElementById("WB" + i).style.backgroundColor = "darkgrey";
-          document.getElementById("WI" + i).style.display = "none";
-        }
+        document.getElementById("WB" + currentImg).style.backgroundColor = "darkgrey";
         document.getElementById("WB" + num).style.backgroundColor = "lightgrey";
+
+        document.getElementById("WI" + currentImg).style.opacity = 0;
+        document.getElementById("WI" + num).style.opacity = 0;
+        await sleep(500);
+        document.getElementById("WI" + currentImg).style.display = "none";
+        document.getElementById("WI" + currentImg).style.opacity = 1;
+
         document.getElementById("WI" + num).style.display = "block";
+        await sleep(10);
+        document.getElementById("WI" + num).style.opacity = 1;
+        currentImg = num;
       }
 
       function lastImage() {
