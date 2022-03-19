@@ -18,7 +18,7 @@ var staff = [
       "MADDOG SPINNING",
       "DAS SPONSORED ATHLETE",
     ]
-  },
+  }, // Jake
   {
     "name": "Stephen Goodman",
     "title": "CFO & COO",
@@ -27,7 +27,7 @@ var staff = [
     "bio": `Stephen is our CFO at Breakthrough Fit Co. He holds his Bachelor's Degree in Kinesiology from SUNY Cortland, as well as his MBA from Mercy College, graduating Summa Cum Laude. Stephen is a life-long resident of Westchester, and in his free time, enjoys exploring the beautiful nature the county has to offer, from hiking Bear Mountain, to the scenic Riverwalk in Tarrytown. Stephen is also a head coach for the Sound Shore Stars Special Olympics Team. His favorite food is Chicken Parmigiana! A quote he lives by is:
 
 "Those who say they can and those that say they can't are both usually right."`,
-  },
+  }, // Stephen
   {
     "name": "Nevin Santos",
     "title": "Coach",
@@ -40,7 +40,7 @@ var staff = [
       "NASM CPT",
       "NASM BCS",
     ]
-  },
+  }, // Nevin
   {
     "name": "Taje Champagnie",
     "title": "Coach",
@@ -49,14 +49,14 @@ var staff = [
     "bio": `As a professional with 6 years of training experience, Taje has come to the understanding that the greatest limiter is choice. He is a NASM certified Personal Trainer and specializes in balance and stability. Regardless of client goals, balance is the lowest common denominator, so his specialty is broad enough to facilitate a variety of physiological needs. He does this in order to remove as many obstacles as possible for his clients so that they get closer to that great limiter; choice. Once he helps his clients get there, they feel secure enough to make the decisions they need to regain, retain, or expand their health. A quote he lives by is:
 
 "Those who ask for help -earnestly- deserve help."`,
-  },
+  }, // Taje
   {
     "name": "Michelle Pachon",
     "title": "Massage Therapist",
     "img": "MichellePachon.jpg",
     "email": "michellesmassages14@gmail.com",
     "bio": `Meet Michelle Pachon, our NYS Licensed Massage Therapist and 200-hour Yoga Alliance Certified Instructor! Michelle has been a practicing Massage Therapist since 2015 and has extensive background in different restorative and regenerative massage styles such as Swedish, Myofascial release, Sport, Lymphatic, Prenatal, and Geriatric massage. She’s also known for her amazing Hatha, Power flow, Vinyasa flow and deep stretch yoga classes. Michelle is the best addition to your self-care routine!`,
-  },
+  }, // Michelle
 ]
 
 /* template
@@ -70,7 +70,7 @@ var staff = [
   "certifications": [
     "CERT-NAME"
   ] // if none, delete
-},
+}, // Name
 
 */
 

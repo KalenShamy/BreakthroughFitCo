@@ -222,7 +222,7 @@ body {
 }
 
 #Welcome_Image {
-  object-fit: cover;
+  max-width: 100%;
   max-height: 1000px;
 }
 
@@ -643,9 +643,7 @@ footer {
     display: flex;
     flex-direction: column;
     justify-content: center;
-  }
-  #Welcome_Image {
-    max-height: 450px;
+    overflow: hidden;
   }
   #veryTop {
     display: flex;
@@ -781,6 +779,7 @@ footer {
   }
   #Welcome_Image {
     min-width: 50%;
+    object-fit: cover;
   }
   #threeBars {
     display: none;
