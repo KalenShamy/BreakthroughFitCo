@@ -70,7 +70,6 @@ var dadJokes = [
   ["What kind of music do mummy's like?", "Rap!"],
   ["Why should you never trust a pig with a secret?", "Because it's bound to squeal!"],
   ["Why are mummys scared of vacation?", "They're afraid to unwind!"],
-  ["What kind of tree fits in your hand?", "A palm tree!"],
   ["What musical instrument is found in the bathroom?", "A tuba toothpaste!"],
   ["What do you call corn that joins the army?", "Kernel!"],
   ["Why did Microsoft PowerPoint cross the road?", "To get to the other slide!"],
@@ -100,7 +99,7 @@ var dadJokes = [
   ["What is a child guilty of if they refuse to nap?", "Resisting a rest!"],
   ["I know a lot of jokes about retired people...", "But none of them work!"],
   ["What does a house wear?", "Address!"],
-  ["What do you call an unpredictable camera?", "A loose Canon!"],
+  ["What do you call a camera with a temper?", "A loose Canon!"],
   ["Which U.S. state is known for its especially small soft drinks?", "Minnesota!"],
   ["What do sprinters eat before a race?", "Nothing. They fast!"],
   ["Why shouldn't you write with a broken pencil?", "Because it's pointless!"],
@@ -128,11 +127,26 @@ var dadJokes = [
   ["How do you throw a party in outer space?", "You planet!"],
   ["What do you say to a rabbit on its birthday?", "Hoppy birthday!"],
   ["What do you call a fake noodle?", "An impasta!"],
+  ["How do you fix a cracked jack-o'-lantern?", "With a pumpkin patch!"],
+  ["What do you call a funny mountain?", "Hill-arious!"],
+  ["Why do bees have sticky hair?", "Because they use honeycombs!"],
+  ["What do rabbits do after they get married?", "They go on a bunny-moon!"],
+  ["What dinosaur had the best vocabulary?", "The thesaurus!"],
+  ["Why don't seagulls fly over the bay?", "Because then they'd be a bay-gull!"],
+  ["How do you know when the moon has had enough to eat?", "When it's full!"],
+  ["What is a kitten's favorite color?", "Purrr-ple!"],
+  ["Who did the vampire bring to prom?", "His ghoul-friend!"],
+  ["How do mermaids buy their groceries?", "With sand dollars!"],
+  ["What's a pirate's favorite letter?", "ARRR!"],
+  ["How does a train eat?", "It goes chew-chew!"],
+  ["What trees have fingers?", "Palm trees!"],
+  ["What is a skeleton's favorite instrument?", "A trom-bone!"],
+  ["What type of which likes the beach?", "A sand-witch!"],
 ];
 
 /* template
 
-["Joke Lead", "Response"],
+["Joke Lead", "Response!"],
 
 */
 
