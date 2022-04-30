@@ -136,8 +136,6 @@ var dadJokes = [
   ["How do you know when the moon has had enough to eat?", "When it's full!"],
   ["What is a kitten's favorite color?", "Purrr-ple!"],
   ["Who did the vampire bring to prom?", "His ghoul-friend!"],
-  ["How do mermaids buy their groceries?", "With sand dollars!"],
-  ["What's a pirate's favorite letter?", "ARRR!"],
   ["How does a train eat?", "It goes chew-chew!"],
   ["What trees have fingers?", "Palm trees!"],
   ["What is a skeleton's favorite instrument?", "A trom-bone!"],
