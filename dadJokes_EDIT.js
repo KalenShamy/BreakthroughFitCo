@@ -130,6 +130,14 @@ var dadJokes = [
   ["What do you call a fake noodle?", "An impasta!"],
 ];
 
+/* template
+
+["Joke Lead", "Response"],
+
+*/
+
+// DON'T TOUCH:
+
 function getRandomInt(min, max) {
   min = Math.ceil(min);
   max = Math.floor(max);
