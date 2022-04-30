@@ -140,6 +140,14 @@ var dadJokes = [
   ["What trees have fingers?", "Palm trees!"],
   ["What is a skeleton's favorite instrument?", "A trom-bone!"],
   ["What type of which likes the beach?", "A sand-witch!"],
+  ["What do you call a cow with no legs?", "Ground beef!"],
+  ["Why is a stuck elevator better than a bad relationship?", "Because it's \"never gonna let you down\""],
+  ["Why did the chicken cross the playground?", "To get to the other slide!"],
+  ["What do you call a typo on a tombstone?", "A grave mistake!"],
+  ["What color is the wind?", "Blew!"],
+  ["Did you hear they arrested the Devil?", "They got him on possession!"],
+  ["My wife has begged me to stop making police related puns.", "I said, \"Okay, I'll give it arrest!"],
+  ["How does music say goodbye?", "Audios!"],
 ];
 
 /* template
