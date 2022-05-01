@@ -14,8 +14,8 @@ function closePopup() {
 }
 
 
-if (window.location.pathname.indexOf("about") != -1) {
-  // about page
+if (window.location.pathname.indexOf("team") != -1) {
+  // team page
   var memberDivs = "";
   for (let i = 0; i < staff.length; i++) {
     let memberDiv = "";
@@ -44,8 +44,8 @@ if (window.location.pathname.indexOf("about") != -1) {
 }
 
 function setup() {
-  if (window.location.pathname.indexOf("about") != -1) {
-    // about page
+  if (window.location.pathname.indexOf("team") != -1) {
+    // team page
     document.getElementById("teamContents").innerHTML = memberDivs;
   }
 }
