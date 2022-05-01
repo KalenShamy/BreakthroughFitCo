@@ -186,7 +186,7 @@ body {
   text-shadow: 0 0 12px black, 0 0 12px black;
   margin: 0;
   position: absolute;
-  top: 7%;
+  top: 1em;
   left: 50%;
   transform: translate(-50%,-50%);
   color: white;
