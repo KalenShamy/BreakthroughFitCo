@@ -29,6 +29,26 @@ var staff = [
 "Those who say they can and those that say they can't are both usually right."`,
   }, // Stephen
   {
+    "name": "Alexis Grier",
+    "title": "Coach",
+    "img": "AlexisGrier.jpg",
+    "email": "jake@breakthroughfitco.com",
+    "bio": ``,
+    "certifications": [
+      "SPECIAL STRONG CERTIFIED",
+    ]
+  }, // Alexis
+  {
+    "name": "Vadid Bienaime",
+    "title": "Coach",
+    "img": "VadidBienaime.jpg",
+    "email": "jake@breakthroughfitco.com",
+    "bio": ``,
+    "certifications": [
+      "SPECIAL STRONG CERTIFIED",
+    ]
+  }, // Vadid
+  {
     "name": "Nevin Santos",
     "title": "Coach",
     "img": "NevinSantos.jpg",
