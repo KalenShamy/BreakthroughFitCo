@@ -39,7 +39,7 @@ var dadJokes = [
   ["Why can't you hear a pterodactyl go to the bathroom?", "Because the pee is silent!"],
   ["What did the buffalo say to his son when he dropped him off at school?", "Bison!"],
   ["What do you call someone with no body and no nose?", "Nobody knows!"],
-  ["Why did the crab never share?", "Because he's shellfish!"],
+  ["Why don't crabs share?", "Because they're a tad shell-fish!"],
   ["How do you get a squirrel to like you?", "Act like a nut!"],
   ["Why don't eggs tell jokes?", "They'd crack each other up!"],
   ["Why can't a nose be 12 inches long?", "Because then it would be a foot!"],
@@ -124,7 +124,7 @@ var dadJokes = [
   ["What happens when a snowman throws a tantrum?", "He has a meltdown!"],
   ["What did the ocean say to the beach?", "Nothing, it just waved!"],
   ["What do you call a sleeping bull?", "A bulldozer!"],
-  ["How do you throw a party in outer space?", "You planet!"],
+  ["How do you throw a party in outer space?", "You plan-it!"],
   ["What do you say to a rabbit on its birthday?", "Hoppy birthday!"],
   ["What do you call a fake noodle?", "An impasta!"],
   ["How do you fix a cracked jack-o'-lantern?", "With a pumpkin patch!"],
@@ -148,6 +148,11 @@ var dadJokes = [
   ["Did you hear they arrested the Devil?", "They got him on possession!"],
   ["My wife has begged me to stop making police related puns.", "I said, \"Okay, I'll give it arrest!"],
   ["How does music say goodbye?", "Audios!"],
+  ["When is the best time to go to the dentist?", "Tooth-hurty!"],
+  ["What kind of key opens a banana?", "A mon-key!"],
+  ["What's the best place to get chicken broth in bulk?", "The stock market!"],
+  ["What do you call a belt with a watch on it?", "A waist of time!"],
+  ["Where do peg-legged pirates eat?", "IHOP!"],
 ];
 
 /* template
