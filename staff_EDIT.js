@@ -33,7 +33,7 @@ var staff = [
     "title": "Coach",
     "img": "AlexisGrier.jpg",
     "email": "jake@breakthroughfitco.com",
-    "bio": ``,
+    "bio": `Alexis has been working with the special needs community since 2012. She has a passion for working with children and families, fitness, and filmmaking. Her goal is to allow individuals to explore their physical and creative abilities, building self esteem and confidence in their ability to positively express themselves. She credits working as an Adaptive Special Needs Trainer and Behavioral Therapist as one of the most rewarding experiences in her career to date.`,
     "certifications": [
       "SPECIAL STRONG CERTIFIED",
     ]
