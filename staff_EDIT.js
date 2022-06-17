@@ -43,7 +43,7 @@ var staff = [
     "title": "Coach",
     "img": "VadidBienaime.jpg",
     "email": "jake@breakthroughfitco.com",
-    "bio": `Vadid is from Haiti and has been working as a trainer for 4 years. He has prior experience working with the special needs community in their group homes. He has a deep passion for fitness that he'd love to share with everyone, no matter their abilities. He enjoys running in his free time and his favorite food is pizza.`,
+    "bio": `Vadid is from Haiti and has been working as a trainer since 2018. He has prior experience working with the special needs community in their group homes. He has a deep passion for fitness that he'd love to share with everyone, no matter their abilities. He enjoys running in his free time and his favorite food is pizza.`,
     "certifications": [
       "SPECIAL STRONG CERTIFIED",
     ]
