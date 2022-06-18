@@ -40,6 +40,7 @@ body {
   margin-right: -5px;
   padding-left: 5px;
   padding-right: 1.576px;
+  transition: 0.25s;
 }
 .CurrentNavPage:hover, .NavLink:hover {
   color: rgb(111,111,111);
