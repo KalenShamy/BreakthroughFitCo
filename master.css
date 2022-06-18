@@ -48,7 +48,7 @@ body {
 }
 .greyButton {
   display: inline-flex;
-  transition: 0.3s;
+  transition: 0.25s;
   text-decoration: none;
   text-transform: uppercase;
   color: rgb(128, 128, 128);
@@ -63,7 +63,7 @@ body {
 }
 .background_greyButton {
   display: inline-flex;
-  transition: 0.3s;
+  transition: 0.25s;
   background-color: rgb(22, 22, 22);
   font-family: "Source Sans Pro", arial, sans-serif;
   font-weight: 700;
@@ -670,7 +670,7 @@ footer {
     text-decoration: none;
     font-size: 36px;
     display: block;
-    transition: 0.3s;
+    transition: 0.25s;
   }
   #mobileNavOverlay #closebtn {
     color: black;
