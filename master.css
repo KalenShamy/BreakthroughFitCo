@@ -35,9 +35,15 @@ body {
 .CurrentNavPage, .NavLink {
   text-decoration: none;
   color: rgb(21,21,21);
+  text-align: center;
+  margin-left: -5px;
+  margin-right: -5px;
+  padding-left: 5px;
+  padding-right: 1.576px;
 }
 .CurrentNavPage:hover, .NavLink:hover {
-  color: rgb(111,111,111)
+  color: rgb(111,111,111);
+  border-color: rgb(111,111,111);
 }
 .greyButton {
   display: inline-flex;
@@ -777,7 +783,7 @@ footer {
   }
   .CurrentNavPage {
     padding-bottom: 4px;
-    border-bottom: 1px solid rgb(111,111,111);
+    border-bottom: 2px solid rgb(21,21,21);
     color: rgb(21,21,21);
   }
   #mobileNavOverlay {
@@ -872,7 +878,7 @@ footer {
   }
   .CurrentNavPage {
     padding-bottom: 4px;
-    border-bottom: 1px solid rgb(111,111,111);
+    border-bottom: 2px solid rgb(21,21,21);
     color: rgb(21,21,21);
   }
   #rtbt_contents{
