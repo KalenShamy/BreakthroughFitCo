@@ -285,9 +285,18 @@ body {
   justify-content: center;
 }
 #socials a {
-  width: 96px;
+  width: 32px;
+  height: 32px;
+  padding: 15px;
+  margin: 17px;
   text-align: center;
+  border-radius: 15px;
+  transition: 0.5s;
 }
+#socials a:hover {
+  background: rgb(225,225,225);
+}
+
 /* About */
 
 #ourteam {
