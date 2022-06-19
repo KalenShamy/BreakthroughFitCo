@@ -62,14 +62,14 @@ h2 {
   text-decoration: none;
   text-transform: uppercase;
   color: rgb(128, 128, 128);
-  padding-bottom: 4px;
   border-bottom: solid 1px;
   font-family: 'Source Sans Pro', arial, sans-serif;
   font-weight: 700;
   font-size: 16px;
   letter-spacing: 3.424px;
   line-height: 32px;
-  margin: 0 0 32px 0;
+  padding: 0 1.576px 4px 5px;
+  margin: 0 -5px 32px -5px;
 }
 .background_greyButton {
   display: inline-flex;
