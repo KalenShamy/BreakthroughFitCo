@@ -6,6 +6,16 @@ html {
 body {
   margin: 0;
 }
+h2 {
+  color: rgb(111, 111, 111);
+  font-family: "Source Sans Pro", arial, sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  letter-spacing: 2.25px;
+  line-height: 25.2px;
+  text-transform: uppercase;
+  margin-bottom: 25px;
+}
 #logo {
   display: block;
   max-width: 100%
@@ -343,12 +353,6 @@ body {
   font-weight: 400;
   margin: 0 0 24px 0;
 }
-#partnersTitle {
-  color: rgb(111,111,111);
-  font-family: 'Source Sans Pro', arial, sans-serif;
-  font-weight: 400;
-  letter-spacing: 1.484px;
-}
 #partners {
   display: flex;
   flex-wrap: wrap;
@@ -505,7 +509,7 @@ footer {
   line-height: 55px;
   letter-spacing: 1.98px;
 }
-.igniteBanner h2 {
+.igniteBanner h3 {
   color: rgb(247, 247, 247);
   font-weight: 400;
   margin: 0 0 24px 0;
@@ -569,16 +573,6 @@ footer {
 }
 .igniteBox #endItem {
   margin-bottom: 0;
-}
-#igniteSchedule h2 {
-  color: rgb(111, 111, 111);
-  font-family: "Source Sans Pro", arial, sans-serif;
-  font-size: 18px;
-  font-weight: 400;
-  letter-spacing: 2.25px;
-  line-height: 25.2px;
-  text-transform: uppercase;
-  margin-bottom: 25px;
 }
 #igniteSchedule div {
   display: flex;
