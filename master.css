@@ -85,9 +85,11 @@ h2 {
   text-transform: uppercase;
   text-decoration: none;
   margin: 0 0 32px 0;
+  border-radius: 15px;
 }
 .greyButton:hover, .background_greyButton:hover {
   color: rgb(191, 191, 191);
+  border-radius: 5px;
 }
 .greyButton:active, .background_greyButton:active {
   color: rgb(219, 219, 219);
@@ -186,6 +188,7 @@ h2 {
   overflow: hidden;
   max-width: 1000px;
   width: 100%;
+  border-radius: 15px;
 
   -khtml-user-select: none;
   -o-user-select: none;
@@ -311,7 +314,13 @@ h2 {
   transition: 0.5s;
 }
 #socials a:hover {
+  transition: 0.5s;
   background: rgb(225,225,225);
+}
+#socials a:active {
+  transition: 0.1s;
+  background: rgb(215,215,215);
+  border-radius: 5px;
 }
 
 /* About */
@@ -543,6 +552,7 @@ footer {
   padding: 32px 0;
   background-color: rgb(22, 22, 22);
   align-items: center;
+  border-radius: 25px;
 }
 .igniteBox img {
   height: 300px;
@@ -716,6 +726,7 @@ footer {
   }
   #CAS h4, #CAS p, .service, .igniteBox {
     max-width: 100%;
+    border-radius: 0;
   }
   #igniteSchedule div {
     flex-direction: column;
@@ -800,6 +811,7 @@ footer {
     margin-top: 20px;
     height: 420px;
     width: 100%;
+    border-radius: 15px;
   }
   .teamMember {
     flex-direction: column;
@@ -892,6 +904,7 @@ footer {
     margin-top: 20px;
     height: 420px;
     width: 100%;
+    border-radius: 15px;
   }
   .teamMember {
     flex-direction: row;
