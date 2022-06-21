@@ -502,6 +502,9 @@ footer {
 .service a {
   margin-top: 25px;
 }
+.serviceTop {
+  width: 100%;
+}
 
 /* IGNITE page */
 .igniteBanner {
@@ -837,9 +840,6 @@ footer {
   #services {
     max-width: 100%;
     margin: 0;
-  }
-  .serviceTop {
-    width: 100%;
   }
   .igniteBox {
     max-width: 100%;
