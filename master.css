@@ -471,6 +471,8 @@ footer {
   background-color: rgb(243, 243, 243);
   align-items: center;
   justify-content: space-between;
+  border-radius: 15px;
+  overflow: hidden;
 }
 .service img {
   width: 100%;
