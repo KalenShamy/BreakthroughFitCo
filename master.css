@@ -840,6 +840,9 @@ footer {
     max-width: 100%;
     margin: 0;
   }
+  .serviceTop {
+    width: 100%;
+  }
   .igniteBox {
     max-width: 100%;
   }
