@@ -94,8 +94,8 @@ h2 {
 .greyButton:active, .background_greyButton:active {
   color: rgb(219, 219, 219);
 }
-/* Home page */
 
+/* Home page */
 #popup {
   transition: 0.5s;
   background-color: rgba(0,0,0,.5);
@@ -324,7 +324,6 @@ h2 {
 }
 
 /* About */
-
 #ourteam {
   background-color: rgb(22, 22, 22);
   padding: 0;
@@ -414,8 +413,8 @@ footer {
   line-height: 30px;
   padding: 40px 0;
 }
-/* Services page */
 
+/* Services page */
 #servicesBanner {
   background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.24) 0%, rgba(0, 0, 0, 0.24) 100%), url("Pictures/servicesBanner.jpg");
   background-repeat: no-repeat;
@@ -503,8 +502,8 @@ footer {
 .service a {
   margin-top: 25px;
 }
-/* IGNITE page */
 
+/* IGNITE page */
 .igniteBanner {
   background-color: rgb(22, 22, 22);
   font-family: "Source Sans Pro", arial, sans-serif;
@@ -620,7 +619,6 @@ footer {
 }
 
 /* Mobile */
-
 @media screen and (max-width: 445px) {
   #igniteDirections {
     margin-top: 15px;
@@ -759,8 +757,8 @@ footer {
     margin: 5px 10px;
   }
 }
-/* Tablet */
 
+/* Tablet */
 @media screen and (min-width: 650px) and (max-width: 925px) {
   .centerBox {
     max-width: 95%;
@@ -861,8 +859,8 @@ footer {
     text-align: center;
   }
 }
-/* Computer */
 
+/* Computer */
 @media screen and (min-width: 925px) {
   .centerBox {
     max-width: 95%;
