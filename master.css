@@ -727,6 +727,7 @@ footer {
     width: 100%;
   }
   #CAS h4, #CAS p, .service, .igniteBox {
+    width: 100%;
     max-width: 100%;
     border-radius: 0;
   }
