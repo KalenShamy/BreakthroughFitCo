@@ -8,6 +8,15 @@ var currentImg = 1;
 
 async function imageChange(num) {
   if (num == currentImg) return;
+
+  for (let i = 1; i <= imageCount; i++) {
+    if (i != num && i != currentImg) {
+      document.getElementById("WB" + i).style.backgroundColor = "";
+      document.getElementById("WI" + i).style.opacity = 1;
+      document.getElementById("WI" + i).style.display = "none";
+    }
+  }
+
   document.getElementById("WB" + currentImg).style.backgroundColor = "";
   document.getElementById("WB" + num).style.backgroundColor = "rgb(175,175,175)";
 
