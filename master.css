@@ -443,6 +443,7 @@ footer {
   width: 100%;
   margin: 0 0 30px 0;
   object-fit: cover;
+  background: rgb(150, 150, 150);
 }
 .service h4, .partner h4 {
   color: rgb(27, 27, 27);
