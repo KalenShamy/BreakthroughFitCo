@@ -49,19 +49,6 @@ var staff = [
     ]
   }, // Vadid
   {
-    "name": "Nevin Santos",
-    "title": "Coach",
-    "img": "NevinSantos.jpg",
-    "email": "nevin@breakthroughfitco.com",
-    "bio": `Nevin is a NASM Certified Personal Trainer who also holds a NASM Certification in Behavioral Change. He specializes in inspiring people to change their habits and routines in a way that promotes a healthier way of life. His favorite food is sushi and during his free time you’ll usually find him on a hike, listening to Reggaetón or Hip Hop. A quote he lives by is:
-
-"If my mind can conceive it and my heart can believe it, then I can achieve it."`,
-    "certifications": [
-      "NASM CPT",
-      "NASM BCS",
-    ]
-  }, // Nevin
-  {
     "name": "Taje Champagnie",
     "title": "Coach",
     "img": "TajeChampagnie.jpg",
