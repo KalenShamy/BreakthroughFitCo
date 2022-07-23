@@ -622,11 +622,6 @@ footer {
 }
 
 /* Mobile */
-@media screen and (max-width: 445px) {
-  #igniteDirections {
-    margin-top: 15px;
-  }
-}
 @media screen and (max-width: 649px) {
   #Welcome {
     display: flex;
