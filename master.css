@@ -361,48 +361,6 @@ h2 {
   font-weight: 400;
   margin: 0 0 24px 0;
 }
-#partners {
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: row;
-  justify-content: center;
-  align-content: center;
-  align-items: stretch;
-}
-.partner {
-  margin: 0 24px 48px 24px;
-  display: flex;
-  flex-direction: column;
-  background-color: rgb(243, 243, 243);
-  align-items: center;
-  justify-content: space-between;
-}
-.partner img {
-  width: 100%;
-  margin: 0 0 30px 0;
-  object-fit: cover;
-}
-.partner h4 {
-  color: rgb(27, 27, 27);
-  text-align: center;
-  font-family: "Source Sans Pro", arial, sans-serif;
-  font-size: 25px;
-  font-weight: 400;
-  letter-spacing: 1.125px;
-  line-height: 31.25px;
-  margin: 0 0 24px 0;
-  padding: 0 32px;
-}
-.partner p {
-  color: rgb(94, 94, 94);
-  text-align: center;
-  font-family: "Source Sans Pro", arial, sans-serif;
-  font-size: 18px;
-  font-weight: 400;
-  line-height: 27px;
-  margin: 0 0 24px 0;
-  padding: 0 32px;
-}
 footer {
   color: rgb(85, 85, 85);
   text-transform: uppercase;
@@ -455,7 +413,7 @@ footer {
   letter-spacing: normal;
   line-height: 27px;
 }
-#services {
+#services, #partners {
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
@@ -463,7 +421,7 @@ footer {
   align-content: center;
   align-items: stretch;
 }
-.service {
+.service, .partner {
   margin: 0 24px 48px 24px;
   display: flex;
   flex-direction: column;
@@ -473,12 +431,12 @@ footer {
   border-radius: 15px;
   overflow: hidden;
 }
-.service img {
+.service img, .partner img {
   width: 100%;
   margin: 0 0 30px 0;
   object-fit: cover;
 }
-.service h4 {
+.service h4, .partner h4 {
   color: rgb(27, 27, 27);
   text-align: center;
   font-family: "Source Sans Pro", arial, sans-serif;
@@ -489,7 +447,7 @@ footer {
   margin: 0 0 24px 0;
   padding: 0 32px;
 }
-.service p {
+.service p, .partner p {
   color: rgb(94, 94, 94);
   text-align: center;
   font-family: "Source Sans Pro", arial, sans-serif;
@@ -719,7 +677,7 @@ footer {
   #partners, #services {
     margin: 0;
   }
-  .partner {
+  .partner, .service {
     width: 100%;
   }
   #CAS h4, #CAS p, .service, .igniteBox {
