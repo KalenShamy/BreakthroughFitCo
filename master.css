@@ -6,6 +6,14 @@ html {
 body {
   margin: 0;
 }
+noscript {
+  display: block;
+  color: red;
+  background: inherit;
+  z-index: 1;
+  text-align: center;
+  margin: 5px 0;
+}
 h2 {
   color: rgb(111, 111, 111);
   font-family: "Source Sans Pro", arial, sans-serif;
@@ -663,7 +671,7 @@ footer {
     height: 320px;
     margin: 0 auto 40px 0;
   }
-  #subMap {
+  #subMap, #rtbt_image noscript {
     display: none;
   }
   .teamMember {
