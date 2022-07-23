@@ -474,14 +474,14 @@ footer {
 
 /* IGNITE page */
 .igniteBanner {
-  background-color: rgb(22, 22, 22);
+  background-color: rgb(243, 243, 243);
   font-family: "Source Sans Pro", arial, sans-serif;
   text-align: center;
   padding: 40px 0;
   margin: 0 0 40px 0;
 }
 .igniteBanner h1 {
-  color: rgb(247, 247, 247);
+  color: rgb(27, 27, 27);
   font-weight: 400;
   margin: 0 0 24px 0;
   font-size: 44px;
@@ -489,7 +489,7 @@ footer {
   letter-spacing: 1.98px;
 }
 .igniteBanner h3 {
-  color: rgb(247, 247, 247);
+  color: rgb(27, 27, 27);
   font-weight: 400;
   margin: 0 0 24px 0;
   font-size: 37px;
@@ -497,12 +497,12 @@ footer {
   letter-spacing: 1.665px;
 }
 .igniteBanner p {
-  color: rgb(164, 164, 164);
+  color: rgb(94, 94, 94);
   font-size: 18px;
   line-height: 27px;
 }
 .igniteBanner span {
-  color: rgb(164, 164, 164);
+  color: rgb(94, 94, 94);
   font-size: 21px;
   line-height: 31.5px;
 }
@@ -520,7 +520,7 @@ footer {
   flex-direction: column;
   margin-bottom: 48px;
   padding: 32px 0;
-  background-color: rgb(22, 22, 22);
+  background-color: rgb(243, 243, 243);
   align-items: center;
   border-radius: 25px;
 }
@@ -531,7 +531,7 @@ footer {
   object-fit: cover;
 }
 .igniteBox h4 {
-  color: rgb(247, 247, 247);
+  color: rgb(27, 27, 27);
   text-align: center;
   font-family: "Source Sans Pro", arial, sans-serif;
   font-size: 51px;
@@ -542,7 +542,7 @@ footer {
   padding: 0 32px;
 }
 .igniteBox p {
-  color: rgb(164, 164, 164);
+  color: rgb(94, 94, 94);
   text-align: center;
   font-family: "Source Sans Pro", arial, sans-serif;
   font-size: 21px;
@@ -561,14 +561,14 @@ footer {
   margin-bottom: 25px;
 }
 #igniteSchedule span {
-  background: rgb(22, 22, 22);
+  background: rgb(243, 243, 243);
   border: solid 1px white;
   padding: 15px;
   width: 20%;
   height: 85px;
 }
 #igniteSchedule h3 {
-  color: rgb(247, 247, 247);
+  color: rgb(27, 27, 27);
   font-family: "Playfair Display", Georgia, serif;
   font-size: 20px;
   font-weight: 400;
@@ -577,7 +577,7 @@ footer {
   margin: 0;
 }
 #igniteSchedule p {
-  color: rgb(175, 175, 175);
+  color: rgb(94, 94, 94);
   font-family: "Source Sans Pro", arial, sans-serif;
   font-size: 15px;
   font-weight: 400;
