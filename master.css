@@ -382,7 +382,7 @@ footer {
 
 /* Services page */
 #servicesBanner {
-  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.24) 0%, rgba(0, 0, 0, 0.24) 100%), url("Pictures/servicesBanner.jpg");
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.24) 0%, rgba(0, 0, 0, 0.24) 100%), url("Pictures/servicesBanner.webp");
   background-repeat: no-repeat;
   background-size: auto, cover;
   background-position: 50% 50%;
