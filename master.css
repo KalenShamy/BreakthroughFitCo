@@ -1,5 +1,11 @@
 /* Created by Kalen Shamy */
 
+/* fonts */
+
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@800&family=Playfair+Display&family=Source+Sans+Pro:ital,wght@0,300;0,400;0,700;1,400&display=swap");
+
+/* globals */
+
 html {
   scroll-behavior: smooth;
 }
@@ -16,7 +22,7 @@ noscript {
 }
 h2 {
   color: rgb(111, 111, 111);
-  font-family: "Source Sans Pro", arial, sans-serif;
+  font-family: arial, sans-serif;
   font-size: 18px;
   font-weight: 400;
   letter-spacing: 2.25px;
@@ -32,7 +38,7 @@ h2 {
   display: flex;
   justify-content: space-between;
   padding: 24px 0px;
-  font-family: "Source Sans Pro", arial, sans-serif;
+  font-family: arial, sans-serif;
   font-weight: 400;
   font-size: 16px;
   line-height: 24px;
@@ -71,7 +77,7 @@ h2 {
   text-transform: uppercase;
   color: rgb(128, 128, 128);
   border-bottom: solid 1px;
-  font-family: 'Source Sans Pro', arial, sans-serif;
+  font-family: arial, sans-serif;
   font-weight: 700;
   font-size: 16px;
   letter-spacing: 3.424px;
@@ -83,7 +89,7 @@ h2 {
   display: inline-flex;
   transition: 0.25s;
   background-color: rgb(22, 22, 22);
-  font-family: "Source Sans Pro", arial, sans-serif;
+  font-family: arial, sans-serif;
   font-weight: 700;
   font-size: 16px;
   letter-spacing: 3.424px;
@@ -121,14 +127,15 @@ h2 {
   -o-transition: 0.5s ease;
   transition: 0.5s ease;
   background-color: white;
-  max-width: 600px;
   width: 70%;
-  max-height: 95%;
+  min-width: 350px;
+  max-width: 600px;
   margin: auto;
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+  border-radius: 15px;
 }
 #popupBox a {
   text-decoration: none;
@@ -138,56 +145,41 @@ h2 {
   transition: 0.5s;
   color: black;
   position: absolute;
-  top: 1%;
-  right: 5%;
+  top: 2.5%;
+  right: 2.5%;
   font-size: 60px;
+  line-height: 50px;
   width: 10%;
   height: 10%;
+  cursor: pointer;
 }
 #popupContents {
-  margin: 5% 0 5% 0;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%,-50%);
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   max-height: 100%;
 }
-#popupContents img {
-  margin: 5% 0 1% 0;
-  max-width: 65%;
-}
-#popupContents #goldOutline {
-  color: rgb(0, 0, 0, 0);
-  -webkit-text-stroke-width: 2px;
-  -webkit-text-stroke-color: rgb(254, 220, 67);
-}
 #popupContents h1 {
-  color: rgb(254, 220, 67);
+  color: rgb(254, 202, 67);
+  text-shadow: 2.5px 3px rgb(178, 128, 0);
   text-transform: uppercase;
   font-family: 'Open Sans', sans-serif;
   font-size: 40px;
-  margin: 0;
+  margin: 0 0 1.25em 0;
   line-height: 45px;
-}
-#popupContents h2 {
-  color: rgb(254, 220, 67);
-  text-transform: uppercase;
-  font-family: 'Open Sans', sans-serif;
-  margin: 0;
 }
 #popupContents p {
   margin: 0;
-  font-family: 'Open Sans', sans-serif;
-  font-size: 14px;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-weight: 300;
 }
-#popupContents #email {
-  margin: 5% 0 1.5% 0;
-  font-family: "Source Sans Pro", arial, sans-serif;
-  font-weight: 700;
-}
-#popupContents #address {
-  font-family: "Source Sans Pro", arial, sans-serif;
-  font-size: 12px;
+#popupContents a:hover {
+  text-decoration: underline;
 }
 #Welcome {
   background: rgb(22,22,22);
@@ -255,7 +247,7 @@ h2 {
 }
 #Welcome_Text_Small {
   color: rgb(145, 145, 145);
-  font-family: 'Source Sans Pro', arial, sans-serif;
+  font-family: arial, sans-serif;
   font-size: 18px;
   font-weight: 400;
   line-height: 1.5;
@@ -273,7 +265,7 @@ h2 {
 #readytobreakthrough {
   background-color: rgb(22, 22, 22);
   padding: 40px 0 0.02px 0;
-  font-family: 'Source Sans Pro', arial, sans-serif;
+  font-family: arial, sans-serif;
   margin: 0 0 40px 0;
 }
 #rtbt_contents {
@@ -298,15 +290,6 @@ h2 {
 #mapFrame {
   width: 100%;
   height: 100%;
-}
-#social h2 {
-  text-transform: uppercase;
-  font-family: "Source Sans Pro", arial, sans-serif;
-  font-size: 18px;
-  font-weight: 400;
-  letter-spacing: 2.25px;
-  line-height: 25.2px;
-  color: rgb(100, 100, 100);
 }
 #socials {
   display: flex;
@@ -355,7 +338,7 @@ h2 {
 .teamMemberText {
   display: flex;
   flex-direction: column;
-  font-family: 'Source Sans Pro', arial, sans-serif;
+  font-family: arial, sans-serif;
   font-weight: 400;
   font-size: 18px;
   line-height: 27px;
@@ -372,7 +355,7 @@ h2 {
 footer {
   color: rgb(85, 85, 85);
   text-transform: uppercase;
-  font-family: 'Source Sans Pro', arial, sans-serif;
+  font-family: arial, sans-serif;
   font-size: 13px;
   letter-spacing: 1.162px;
   height: auto;   /* Height of the footer */
@@ -386,7 +369,7 @@ footer {
   background-repeat: no-repeat;
   background-size: auto, cover;
   background-position: 50% 50%;
-  font-family: "Source Sans Pro", arial, sans-serif;
+  font-family: arial, sans-serif;
   text-align: center;
   padding: 60px 0;
   margin: 0 0 40px 0;
@@ -406,7 +389,7 @@ footer {
 #CAS h4 {
   color: rgb(24, 24, 24);
   margin: 0 auto 24px auto;
-  font-family: "Source Sans Pro", arial, sans-serif;
+  font-family: arial, sans-serif;
   font-size: 25px;
   font-weight: 400;
   letter-spacing: 1.125px;
@@ -415,7 +398,7 @@ footer {
 #CAS p {
   color: rgb(94, 94, 94);
   margin: 0 auto;
-  font-family: "Source Sans Pro", arial, sans-serif;
+  font-family: arial, sans-serif;
   font-size: 18px;
   font-weight: 400;
   letter-spacing: normal;
@@ -448,7 +431,7 @@ footer {
 .service h4, .partner h4 {
   color: rgb(27, 27, 27);
   text-align: center;
-  font-family: "Source Sans Pro", arial, sans-serif;
+  font-family: arial, sans-serif;
   font-size: 25px;
   font-weight: 400;
   letter-spacing: 1.125px;
@@ -459,7 +442,7 @@ footer {
 .service p, .partner p {
   color: rgb(94, 94, 94);
   text-align: center;
-  font-family: "Source Sans Pro", arial, sans-serif;
+  font-family: arial, sans-serif;
   font-size: 18px;
   font-weight: 400;
   line-height: 27px;
@@ -476,7 +459,7 @@ footer {
 /* IGNITE page */
 .igniteBanner {
   background-color: rgb(243, 243, 243);
-  font-family: "Source Sans Pro", arial, sans-serif;
+  font-family: arial, sans-serif;
   text-align: center;
   padding: 40px 0;
   margin: 0 0 40px 0;
@@ -534,7 +517,7 @@ footer {
 .igniteBox h4 {
   color: rgb(27, 27, 27);
   text-align: center;
-  font-family: "Source Sans Pro", arial, sans-serif;
+  font-family: arial, sans-serif;
   font-size: 51px;
   font-weight: 400;
   letter-spacing: 2.295px;
@@ -545,7 +528,7 @@ footer {
 .igniteBox p {
   color: rgb(94, 94, 94);
   text-align: center;
-  font-family: "Source Sans Pro", arial, sans-serif;
+  font-family: arial, sans-serif;
   font-size: 21px;
   font-weight: 400;
   line-height: 31.5px;
@@ -580,7 +563,7 @@ footer {
 }
 #igniteSchedule p {
   color: rgb(94, 94, 94);
-  font-family: "Source Sans Pro", arial, sans-serif;
+  font-family: arial, sans-serif;
   font-size: 15px;
   font-weight: 400;
   letter-spacing: 1.125px;
