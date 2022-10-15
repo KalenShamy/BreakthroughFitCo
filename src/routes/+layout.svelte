@@ -1,6 +1,22 @@
+<script lang="ts">
+  let mobileNavOverlay: HTMLDivElement | undefined;
+
+  function openNav() {
+    if (mobileNavOverlay) {
+      mobileNavOverlay.style.width = "100%";
+    }
+  }
+
+  function closeNav() {
+    if (mobileNavOverlay) {
+      mobileNavOverlay.style.width = "0%";
+    }
+  }
+</script>
+
 <header>
     <div id="veryTop">
-      <span onclick="openNav()" id="threeBars">
+      <span on:click={openNav} id="threeBars">
         <svg viewBox="0 0 24 24" fill="currentColor" style="width: 35px; position: relative; left: 12px;">
           <path fill-rule="evenodd" d="M19 8H5a1 1 0 1 1 0-2h14a1 1 0 0 1 0 2zm0 5.097H5a1 1 0 1 1 0-2h14a1 1 0 1 1 0 2zm0 5.25H5a1 1 0 1 1 0-2h14a1 1 0 1 1 0 2z"></path>
         </svg>
@@ -15,13 +31,13 @@
       <a href="ignite" class="NavLink">Ignite</a>
       <a href="https://clients.mindbodyonline.com/ASP/su1.asp?studioid=5721621" class="NavLink" target="_blank">Client Portal</a>
     </div>
-    <div id="mobileNavOverlay">
-      <span id="closebtn" onclick="closeNav()">×</span>
+    <div id="mobileNavOverlay" bind:this={mobileNavOverlay}>
+      <span id="closebtn" on:click={closeNav}>×</span>
       <div id="mobileNavBar">
-        <a href="./" class="NavLink">Home</a>
-        <a href="team" class="NavLink">Team</a>
-        <a href="services" class="NavLink">Services</a>
-        <a href="ignite" class="NavLink">Ignite</a>
+        <a href="./" class="NavLink" on:click={closeNav}>Home</a>
+        <a href="team" class="NavLink" on:click={closeNav}>Team</a>
+        <a href="services" class="NavLink" on:click={closeNav}>Services</a>
+        <a href="ignite" class="NavLink" on:click={closeNav}>Ignite</a>
         <a href="https://clients.mindbodyonline.com/ASP/su1.asp?studioid=5721621" class="NavLink" target="_blank">Client Portal</a>
       </div>
     </div>
