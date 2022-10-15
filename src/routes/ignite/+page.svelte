@@ -1,3 +1,42 @@
+<script lang="ts">
+	import { schedule_update } from "svelte/internal";
+
+    const igniteSchedule = [
+        {
+            day: "Monday",
+            isFull: false,
+            times: ["4pm - 5pm"]
+        },
+        {
+            day: "Tuesday",
+            isFull: false,
+            times: ["4pm - 5pm"]
+        },
+        {
+            day: "Wednesday",
+            isFull: true,
+            times: ["4pm - 5pm"]
+        },
+        {
+            day: "Thursday",
+            isFull: false,
+            times: ["4pm - 5pm"],
+            specials: [
+                {
+                    time: "4:30pm - 5:30pm", 
+                    place: "Shames JCC",
+                    website: "https://shamesjcc.org"
+                }
+            ]
+        },
+        {
+            day: "Friday",
+            isFull: true,
+            times: ["4pm - 5pm"]
+        },
+    ]
+</script>
+
 <div class="igniteBanner">
     <h1>IGNITE</h1>
     <p>Ignite your purpose.  Ignite your power.  Ignite your potential.</p>
@@ -20,44 +59,26 @@
 <div id="igniteSchedule" class="centerBox paddingPadder">
     <h2>Ignite Schedule</h2>
     <div>
-        <span>
-            <h3>Monday</h3>
-            <p>
-                4pm - 5pm
-                <br>
-                5pm - 6pm
-            </p>
-        </span>
-        <span>
-            <h3>Tuesday</h3>
-            <p>
-                4pm - 5pm
-                <br>
-                5pm - 6pm
-            </p>
-        </span>
-        <span>
-            <h3>Wednesday</h3>
-            <p>
-                4pm - 5pm
-                <br>
-                5pm - 6pm
-            </p>
-        </span>
-        <span>
-            <h3>Thursday</h3>
-            <p>
-                4pm - 5pm
-                <br>
-                5pm - 6pm
-            </p>
-        </span>
-        <span>
-            <h3>Friday</h3>
-            <p>
-                4pm - 5pm
-            </p>
-        </span>
+        {#each igniteSchedule as schedule}
+            <span>
+                <h3>{schedule.day}</h3>
+                <p>
+                    {#each schedule.times as time}
+                        {time}<br>
+                    {/each}
+                    {#if schedule.specials}
+                        {#each schedule.specials as special}
+                            {special.time} @ <a href="{special.website}" target="_blank">{special.place}</a><br>
+                        {/each}
+                    {/if}
+                </p>
+                {#if schedule.isFull}
+                    <div class="soldOut">
+                        <h1>SOLD OUT</h1>
+                    </div>
+                {/if}
+            </span>
+        {/each}
     </div>
 </div>
 <div class="igniteBanner" style="margin-bottom: 0;">
