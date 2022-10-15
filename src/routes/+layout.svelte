@@ -12,7 +12,7 @@
       <a href="./" class="NavLink">Home</a>
       <a href="team" class="NavLink">Team</a>
       <a href="services" class="NavLink">Services</a>
-      <a href="ignite" class="CurrentNavPage">Ignite</a>
+      <a href="ignite" class="NavLink">Ignite</a>
       <a href="https://clients.mindbodyonline.com/ASP/su1.asp?studioid=5721621" class="NavLink" target="_blank">Client Portal</a>
     </div>
     <div id="mobileNavOverlay">
@@ -21,7 +21,7 @@
         <a href="./" class="NavLink">Home</a>
         <a href="team" class="NavLink">Team</a>
         <a href="services" class="NavLink">Services</a>
-        <a href="ignite" class="CurrentNavPage">Ignite</a>
+        <a href="ignite" class="NavLink">Ignite</a>
         <a href="https://clients.mindbodyonline.com/ASP/su1.asp?studioid=5721621" class="NavLink" target="_blank">Client Portal</a>
       </div>
     </div>

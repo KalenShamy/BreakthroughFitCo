@@ -56,7 +56,7 @@ h2 {
 .centerBox, .centerMediumBox, .centerSmallBox {
   margin: 0 auto 40px auto;
 }
-.CurrentNavPage, .NavLink {
+.NavLink {
   text-decoration: none;
   color: rgb(21,21,21);
   text-align: center;
@@ -66,7 +66,7 @@ h2 {
   padding-right: 1.576px;
   transition: 0.25s;
 }
-.CurrentNavPage:hover, .NavLink:hover {
+.NavLink:hover {
   color: rgb(111,111,111);
   border-color: rgb(111,111,111);
 }
@@ -108,80 +108,11 @@ h2 {
 .greyButton:active, .background_greyButton:active {
   color: rgb(219, 219, 219);
 }
+a {
+  color: inherit;
+}
 
 /* Home page */
-#popup {
-  transition: 0.5s;
-  background-color: rgba(0,0,0,.5);
-  height: 100%;
-  position: fixed;
-  text-align: center;
-  top: 0;
-  width: 100%;
-  z-index: 2000;
-}
-#popupBox {
-  display: table;
-  vertical-align: middle;
-  -webkit-transition: 0.5s ease;
-  -moz-transition: 0.5s ease;
-  -o-transition: 0.5s ease;
-  transition: 0.5s ease;
-  background-color: white;
-  width: 70%;
-  min-width: 350px;
-  max-width: 600px;
-  margin: auto;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  border-radius: 15px;
-}
-#popupBox a {
-  text-decoration: none;
-  color: black;
-}
-#popupCloseButton {
-  transition: 0.5s;
-  color: black;
-  position: absolute;
-  top: 2.5%;
-  right: 2.5%;
-  font-size: 60px;
-  line-height: 50px;
-  width: 10%;
-  height: 10%;
-  cursor: pointer;
-}
-#popupContents {
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%,-50%);
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  max-height: 100%;
-}
-#popupContents h1 {
-  color: rgb(254, 202, 67);
-  text-shadow: 2.5px 3px rgb(178, 128, 0);
-  text-transform: uppercase;
-  font-family: 'Open Sans', sans-serif;
-  font-size: 40px;
-  margin: 0 0 1.25em 0;
-  line-height: 45px;
-}
-#popupContents p {
-  margin: 0;
-  font-family: 'Source Sans Pro', sans-serif;
-  font-weight: 300;
-}
-#popupContents a:hover {
-  text-decoration: underline;
-}
 #Welcome {
   background: rgb(22,22,22);
   flex-direction: column;
@@ -551,7 +482,6 @@ footer {
   border: solid 1px white;
   padding: 15px;
   width: 200px;
-  height: 85px;
 }
 #igniteSchedule h3 {
   color: rgb(27, 27, 27);
@@ -633,9 +563,6 @@ footer {
     right: 45px;
     font-size: 60px;
     cursor: default;
-  }
-  .CurrentNavPage {
-    font-weight: 900;
   }
   #logo {
     margin: 24px auto;
@@ -737,11 +664,6 @@ footer {
     margin-top: 56px;
     max-height: 123px;
   }
-  .CurrentNavPage {
-    padding-bottom: 4px;
-    border-bottom: 2px solid rgb(21,21,21);
-    color: rgb(21,21,21);
-  }
   #mobileNavOverlay {
     display: none;
   }
@@ -828,11 +750,6 @@ footer {
     margin: 0 auto;
     margin-top: 56px;
     max-height: 123px;
-  }
-  .CurrentNavPage {
-    padding-bottom: 4px;
-    border-bottom: 2px solid rgb(21,21,21);
-    color: rgb(21,21,21);
   }
   #rtbt_contents{
     justify-content: space-evenly;

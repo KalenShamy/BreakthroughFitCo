@@ -1,4 +1,4 @@
-var dadJokes = [
+export const dadJokes: string[][] = [
   ["What did one pirate say to the other when he beat him at chess?", "Checkmatey!"],
   ["I burned 2000 calories today...", "I left my food in the oven for too long!"],
   ["I broke my arm in two places!", "My doctor told me to stop going to those places!"],
@@ -93,7 +93,6 @@ var dadJokes = [
   ["What's the most depressing day of the week?", "Sadder day!"],
   ["Dogs can't operate MRI machines", "But catscan!"],
   ["What kind of car does a sheep like to drive?", "A lamborghini!"],
-  ["What did the accountant say while auditing a document?", "This is taxing!"],
   ["What did the two pieces of bread say on their wedding day?", "It was loaf at first sight!"],
   ["What do you call a toothless bear?", "A gummy bear!"],
   ["What is a child guilty of if they refuse to nap?", "Resisting a rest!"],
@@ -163,14 +162,12 @@ var dadJokes = [
 
 // DON'T TOUCH:
 
-function getRandomInt(min, max) {
+function getRandomInt(min: number, max: number) {
   min = Math.ceil(min);
   max = Math.floor(max);
   return Math.floor(Math.random() * (max - min) + min);
 }
 
-window.onload = function() {
-  let num = getRandomInt(0, dadJokes.length-1);
-  document.getElementById("djLine").innerText = dadJokes[num][0];
-  document.getElementById("djAnswer").innerText = dadJokes[num][1];
+export const getRandomJoke = () => {
+  return dadJokes[getRandomInt(0,dadJokes.length-1)];
 }
