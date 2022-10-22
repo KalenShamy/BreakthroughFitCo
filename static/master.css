@@ -166,17 +166,6 @@ a {
   transition: 0.5s;
   z-index: 0;
 }
-#WB1, #WB2, #WB3, #WB4, #WB5, #WB6, #WB7 {
-  background-color: rgb(75,75,75);
-}
-#WI2, #WI3, #WI4, #WI5, #WI6, #WI7 {
-  display: none;
-}
-#WB1:hover, #WB2:hover, #WB3:hover, #WB4:hover, #WB5:hover, #WB6:hover, #WB7:hover {
-  background-color: white;
-  margin-left: 10px;
-  margin-right: 10px;
-}
 #Welcome_Text_Small {
   color: rgb(145, 145, 145);
   font-family: arial, sans-serif;
@@ -513,7 +502,6 @@ footer {
   top: 0;
   left: 0;
 }
-
 .soldOut h1 {
   color: white;
   transform: translate(-50%, -50%) rotate(-25deg);

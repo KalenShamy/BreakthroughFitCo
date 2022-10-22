@@ -1,25 +1,83 @@
+<script lang="ts">
+    let imageCount = 7;
+    let images: (HTMLImageElement | HTMLAnchorElement)[][] = Array.from(Array(imageCount)).map(() => []);
+    let currentImage = 0;
+    let isChanging = false;
+
+    function sleep(ms: number) {
+       return new Promise(resolve => setTimeout(resolve, ms));
+    }
+    
+    const imageChange = async (imgNum: number) => {
+        if (isChanging) return;
+        isChanging = true;
+        for (let i = 0; i < imageCount; i++) {
+            if (currentImage == i || imgNum == i) continue;
+            if (images[i][1]) images[i][1].style.backgroundColor = "";
+            if (images[i][0]) images[i][0].style.opacity = "0";
+            if (images[i][0]) images[i][0].style.display = "none";
+        }
+
+        if (images[currentImage][1]) images[currentImage][1].style.backgroundColor = "";
+        if (images[imgNum][1]) images[imgNum][1].style.backgroundColor = "rgb(175,175,175)";
+        if (images[currentImage][0]) images[currentImage][0].style.opacity = "0";
+        if (images[imgNum][0]) images[imgNum][0].style.opacity = "0";
+
+        await sleep(200);
+
+        if (images[currentImage][0]) images[currentImage][0].style.display = "none";
+        if (images[imgNum][0]) images[imgNum][0].style.display = "block";
+
+        await sleep(150);
+
+        if (images[imgNum][0]) images[imgNum][0].style.opacity = "1";
+
+        await sleep(150);
+
+        currentImage = imgNum;
+        isChanging = false;
+    }
+
+    setInterval(() => {
+        if (currentImage == imageCount - 1) imageChange(0);
+        else imageChange(currentImage+1);
+    }, 5 * 1000);
+</script>
+
+<style>
+    .WB {
+        background-color: rgb(75,75,75);
+    }
+    .WI {
+        display: none;
+    }
+    .WB:hover {
+        background-color: white;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+</style>
+
 <div class="padder"> <!-- Padder for welcome box -->
     <div id="Welcome" class="centerBox">
-        <img id="WI1" src="Pictures/WelcomeImages/1.webp" alt="">
-        <img id="WI2" src="Pictures/WelcomeImages/2.webp" alt="">
-        <img id="WI3" src="Pictures/WelcomeImages/3.webp" alt="">
-        <img id="WI4" src="Pictures/WelcomeImages/4.webp" alt="">
-        <img id="WI5" src="Pictures/WelcomeImages/5.webp" alt="">
-        <img id="WI6" src="Pictures/WelcomeImages/6.webp" alt="">
-        <img id="WI7" src="Pictures/WelcomeImages/7.webp" alt="">
+        {#each Array(imageCount) as _, i}
+            {#if i == 0}
+                <img id="WI{i+1}" class="WI" src="Pictures/WelcomeImages/{i+1}.webp" alt="" style="display: block" bind:this={images[i][0]}>
+            {:else}
+                <img id="WI{i+1}" class="WI" src="Pictures/WelcomeImages/{i+1}.webp" alt="" bind:this={images[i][0]}>
+            {/if}
+        {/each}
         <p id="Welcome_Text">Where all are Welcome</p>
-        <noscript style="margin:0;position:absolute;bottom:5px;left:50%;transform:translateX(-50%);">
-        Slideshow requires JavaScript
-        </noscript>
         <div class="SlideshowSkipButtons">
         <div>
-            <a id="WB1" onclick="imageChange(1)" href="javascript:void(0)"></a>
-            <a id="WB2" onclick="imageChange(2)" href="javascript:void(0)"></a>
-            <a id="WB3" onclick="imageChange(3)" href="javascript:void(0)"></a>
-            <a id="WB4" onclick="imageChange(4)" href="javascript:void(0)"></a>
-            <a id="WB5" onclick="imageChange(5)" href="javascript:void(0)"></a>
-            <a id="WB6" onclick="imageChange(6)" href="javascript:void(0)"></a>
-            <a id="WB7" onclick="imageChange(7)" href="javascript:void(0)"></a>
+            {#each Array(imageCount) as _, i}
+                <!-- svelte-ignore a11y-missing-content -->
+                {#if i == 0}
+                    <a id="WB{i+1}" class="WB" on:click={() => {imageChange(i)}} style="background-color: rgb(175,175,175)" bind:this={images[i][1]} />
+                {:else}
+                    <a id="WB{i+1}" class="WB" on:click={() => {imageChange(i)}} bind:this={images[i][1]} />
+                {/if}
+            {/each}
         </div>
         </div>
     </div>
