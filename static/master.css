@@ -238,33 +238,51 @@ a {
 /* About */
 #ourteam {
   background-color: rgb(22, 22, 22);
-  padding: 0;
+  padding-block: 40px;
   margin: 0 0 40px 0;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
+#teamContents {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
 .teamMember {
-  width: 100%;
-  padding: 40px 0 40px 0;
+  position: relative;
   display: flex;
   justify-content: flex-start;
+  margin: 5px;
 }
-.teamMember img {
-  border-radius: 50%;
+.teamMember {
+  transition: 0.25s border-radius;
+  border-radius: 15px;
+  overflow: hidden;
+}
+.teamMember:hover {
+  border-radius: 5px;
 }
 .teamMember p {
   margin: 0 0 24px 0;
 }
 .teamMemberText {
-  display: flex;
-  flex-direction: column;
+  position: absolute;
+  width: calc(100% - 30px);
+  height: calc(100% - 30px);
+  padding: 15px;
+  background-color: rgba(0,0,0,0.25);
+  transition: 0.25s background-color;
+
   font-family: arial, sans-serif;
   font-weight: 400;
   font-size: 18px;
   line-height: 27px;
   color: rgb(164, 164, 164);
-  align-items: flex-start;
+}
+.teamMemberText:hover {
+  background-color: rgba(0,0,0,0.5);
 }
 .teamMemberName {
   color: rgb(247, 247, 247);
@@ -602,7 +620,6 @@ footer {
   }
   .teamMember img {
     width: 75%;
-    margin: 0 0 32px 0;
   }
   #partners, #services {
     margin: 0;
@@ -706,7 +723,6 @@ footer {
   }
   .teamMember img {
     width: 75%;
-    margin: 0 0 32px 0;
   }
   #partners {
     max-width: 100%;
@@ -789,12 +805,8 @@ footer {
     align-items: flex-start;
   }
   .teamMember img {
-    margin: 0 24px 0 24px;
     width: 400px;
     height: 400px;
-  }
-  .teamMemberText {
-    margin: 0 24px 0 24px;
   }
   .partner {
     width: 27.775%;
