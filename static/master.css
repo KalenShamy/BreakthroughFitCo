@@ -255,14 +255,16 @@ a {
   display: flex;
   justify-content: flex-start;
   margin: 5px;
-}
-.teamMember {
   transition: 0.25s border-radius;
   border-radius: 15px;
   overflow: hidden;
+  width: 400px;
 }
 .teamMember:hover {
   border-radius: 5px;
+}
+.teamMember img {
+  width: 100%;
 }
 .teamMember p {
   margin: 0 0 24px 0;
@@ -662,9 +664,6 @@ footer {
     flex-direction: column;
     align-items: center;
   }
-  .teamMember img {
-    width: 75%;
-  }
   #partners, #services {
     margin: 0;
   }
@@ -765,9 +764,6 @@ footer {
     flex-direction: column;
     align-items: center;
   }
-  .teamMember img {
-    width: 75%;
-  }
   #partners {
     max-width: 100%;
     margin: 0;
@@ -847,10 +843,6 @@ footer {
   .teamMember {
     flex-direction: row;
     align-items: flex-start;
-  }
-  .teamMember img {
-    width: 400px;
-    height: 400px;
   }
   .partner {
     width: 27.775%;
