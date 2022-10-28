@@ -264,7 +264,7 @@ a {
   border-radius: 5px;
 }
 .teamMember img {
-  width: 100%;
+  max-width: 100%;
 }
 .teamMember p {
   margin: 0 0 24px 0;
