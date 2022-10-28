@@ -69,19 +69,18 @@
                 <img loading="lazy" alt="" src="Pictures/Staff/{member.img}">
                 <div class="teamMemberText">
                     <h1 class="teamMemberName">{member.name} - {member.title}</h1>
-                    <!--<p>{member.bio}</p>
-                    {#if member.certifications}
-                        <h1 class="teamMemberName">Certifications</h1>
-                        <p>
-                            {#each member.certifications as certification, i}
-                                {#if i > 0}
-                                    &nbsp;-&nbsp;
-                                {/if}
-                                {certification}
-                            {/each}
-                        </p>
-                    {/if}
-                    <a class="greyButton" target="_blank" href="mailto:{member.email}?subject=Breakthrough%20Fit%20Co">Contact</a> -->
+                    <div class="teamMemberTextExtra">
+                        <p>{member.bio}</p>
+                        {#if member.certifications}
+                            <h1>Certifications</h1>
+                            <div class="teamMemberCerts">
+                                {#each member.certifications as certification, i}
+                                    <span class="teamMemberCertChip">{certification}</span>
+                                {/each}
+                            </div>
+                        {/if}
+                    </div>
+                    <a class="teamMemberContact" target="_blank" href="mailto:{member.email}?subject=Breakthrough%20Fit%20Co">Contact</a>
                 </div>
             </div>
         {/each}
