@@ -258,13 +258,13 @@ a {
   transition: 0.25s border-radius;
   border-radius: 15px;
   overflow: hidden;
-  width: 400px;
+  max-width: 400px;
 }
 .teamMember:hover {
   border-radius: 5px;
 }
 .teamMember img {
-  max-width: 100%;
+  width: 100%;
 }
 .teamMember p {
   margin: 0 0 24px 0;
