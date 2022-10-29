@@ -325,6 +325,8 @@ a {
 a.teamMemberContact {
   display: block;
   background: rgb(22, 22, 22);
+  border: solid transparent 1px;
+  border-bottom: none;
   position: absolute;
   padding: 5px;
   border-top-right-radius: 10px;
@@ -336,6 +338,9 @@ a.teamMemberContact {
 }
 a.teamMemberContact:hover {
   padding-bottom: 3em;
+  background: rgb(30, 30, 30);
+  border: solid white 1px;
+  border-bottom: none;
 }
 footer {
   color: rgb(85, 85, 85);
