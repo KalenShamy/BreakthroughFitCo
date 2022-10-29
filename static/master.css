@@ -274,7 +274,7 @@ a {
   width: calc(100% - 30px);
   height: calc(100% - 30px);
   padding: 15px;
-  background-color: rgba(0,0,0,0.25);
+  background: linear-gradient(180deg, rgba(0,0,0,0.5) 15%, rgba(0,0,0,0) 50%, rgba(0,0,0,0) 100%);
   transition: 0.25s background-color;
 
   font-family: arial, sans-serif;
