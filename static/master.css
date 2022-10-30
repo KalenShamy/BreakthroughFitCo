@@ -166,17 +166,6 @@ a {
   transition: 0.5s;
   z-index: 0;
 }
-#WB1, #WB2, #WB3, #WB4, #WB5, #WB6, #WB7 {
-  background-color: rgb(75,75,75);
-}
-#WI2, #WI3, #WI4, #WI5, #WI6, #WI7 {
-  display: none;
-}
-#WB1:hover, #WB2:hover, #WB3:hover, #WB4:hover, #WB5:hover, #WB6:hover, #WB7:hover {
-  background-color: white;
-  margin-left: 10px;
-  margin-right: 10px;
-}
 #Welcome_Text_Small {
   color: rgb(145, 145, 145);
   font-family: arial, sans-serif;
@@ -249,33 +238,53 @@ a {
 /* About */
 #ourteam {
   background-color: rgb(22, 22, 22);
-  padding: 0;
+  padding-block: 40px;
   margin: 0 0 40px 0;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
+#teamContents {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
 .teamMember {
-  width: 100%;
-  padding: 40px 0 40px 0;
+  position: relative;
   display: flex;
   justify-content: flex-start;
+  margin: 5px;
+  transition: 0.25s border-radius;
+  border-radius: 15px;
+  overflow: hidden;
+  max-width: 400px;
+}
+.teamMember:hover {
+  border-radius: 5px;
 }
 .teamMember img {
-  border-radius: 50%;
+  width: 100%;
 }
 .teamMember p {
   margin: 0 0 24px 0;
 }
 .teamMemberText {
-  display: flex;
-  flex-direction: column;
+  position: absolute;
+  width: calc(100% - 30px);
+  height: calc(100% - 30px);
+  padding: 15px;
+  background: linear-gradient(180deg, rgba(0,0,0,0.5) 15%, rgba(0,0,0,0) 50%, rgba(0,0,0,0) 100%);
+  transition: 0.25s background-color;
+
   font-family: arial, sans-serif;
   font-weight: 400;
   font-size: 18px;
   line-height: 27px;
   color: rgb(164, 164, 164);
-  align-items: flex-start;
+}
+.teamMemberText:hover {
+  background-color: rgba(0,0,0,0.75);
 }
 .teamMemberName {
   color: rgb(247, 247, 247);
@@ -283,6 +292,57 @@ a {
   line-height: 31.25px;
   font-weight: 400;
   margin: 0 0 24px 0;
+}
+.teamMemberText:hover .teamMemberTextExtra {
+  height: 50%;
+  overflow: auto;
+}
+.teamMemberTextExtra {
+  transition: 0.5s;
+  height: 0;
+  overflow: hidden;
+  position: absolute;
+  bottom: 3em;
+  padding-right: 15px;
+  color: rgb(215,215,215);
+}
+.teamMemberTextExtra h1 {
+  font-size: 20px;
+}
+.teamMemberCerts {
+  line-height: calc(1em + 10px);
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.teamMemberCertChip {
+  background: rgba(0,0,0,0.75);
+  padding: 7px;
+  border-radius: 10px;
+  color: white;
+  margin: 2px;
+}
+a.teamMemberContact {
+  display: block;
+  background: rgb(22, 22, 22);
+  border: solid transparent 1px;
+  border-bottom: none;
+  position: absolute;
+  padding: 5px;
+  border-top-right-radius: 10px;
+  text-decoration: none;
+  bottom: 0;
+  border-top-left-radius: 10px;
+  transition: 0.25s;
+  color: white;
+}
+a.teamMemberContact:hover {
+  padding-bottom: 3em;
+}
+.teamMemberText:hover a.teamMemberContact {
+  background: rgb(30, 30, 30);
+  border: solid rgba(255,255,255,0.25) 1px;
+  border-bottom: none;
 }
 footer {
   color: rgb(85, 85, 85);
@@ -513,7 +573,6 @@ footer {
   top: 0;
   left: 0;
 }
-
 .soldOut h1 {
   color: white;
   transform: translate(-50%, -50%) rotate(-25deg);
@@ -611,10 +670,6 @@ footer {
   .teamMember {
     flex-direction: column;
     align-items: center;
-  }
-  .teamMember img {
-    width: 75%;
-    margin: 0 0 32px 0;
   }
   #partners, #services {
     margin: 0;
@@ -716,10 +771,6 @@ footer {
     flex-direction: column;
     align-items: center;
   }
-  .teamMember img {
-    width: 75%;
-    margin: 0 0 32px 0;
-  }
   #partners {
     max-width: 100%;
     margin: 0;
@@ -799,14 +850,6 @@ footer {
   .teamMember {
     flex-direction: row;
     align-items: flex-start;
-  }
-  .teamMember img {
-    margin: 0 24px 0 24px;
-    width: 400px;
-    height: 400px;
-  }
-  .teamMemberText {
-    margin: 0 24px 0 24px;
   }
   .partner {
     width: 27.775%;
