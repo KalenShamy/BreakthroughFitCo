@@ -24,6 +24,9 @@
             img: "StephenGoodman.webp",
             email: "steve@breakthroughfitco.com",
             bio: `Stephen is our CFO at Breakthrough Fit Co. He holds his Bachelor's Degree in Kinesiology from SUNY Cortland, as well as his MBA from Mercy College, graduating Summa Cum Laude. Stephen is a life-long resident of Westchester, and in his free time, enjoys exploring the beautiful nature the county has to offer, from hiking Bear Mountain, to the scenic Riverwalk in Tarrytown. Stephen is also a head coach for the Sound Shore Stars Special Olympics Team. His favorite food is Chicken Parmigiana! A quote he lives by is "those who say they can and those that say they can't are both usually right."`,
+            certifications: [
+                "NASM CPT",
+            ]
         }, // Stephen
         {
             name: "Alexis Grier",
