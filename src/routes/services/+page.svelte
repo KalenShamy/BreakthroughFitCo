@@ -1,3 +1,10 @@
+<script>
+    import EmailPopup from "$lib/components/EmailPopup.svelte";
+
+    let PersonalTrainingInterest = false;
+    let IgniteInterest = false;
+</script>
+
 <div id="servicesBanner">
     <h1>Services</h1>
 </div>
@@ -40,43 +47,73 @@
                 3x Per Session: $60/session
             </p>
         </div>
-        <a class="greyButton" href="mailto:jake@breakthroughfitco.com?subject=Personal%20Training">Learn More</a>
+        <span class="greyButton" on:click={() => PersonalTrainingInterest = true}>Book your session</span>
     </div>
     <div class="service">
         <div class="serviceTop">
-        <img loading="lazy" src="Pictures/IGNITE.webp" alt="" style="width: 75%; padding: 12.5%;">
-        <h4>IGNITE</h4>
-        <p>
-            IGNITE offers fun, inclusive, and structured programming to create community and enhance the lives of those we work with.
-            <br>
-            <br>
-            <b>Packages:</b>
-            <br>
-            1x Per Week: $199/month
-            <br>
-            2x Per Week: $299/month
-            <br>
-            3x Per Week: $359/month
-            <br>
-            <br>
-            <b>Includes:</b>
-            <br>
-            Weekly classes
-            <br>
-            Complimentary Introductory Training Session
-            <br>
-            Community Nights
-            <br>
-            <br>
-            <span class="asterisks">
-                *Classes will have always 2 qualified coaches and never exceed 5 participants to ensure personalization, progress, and results.
+            <img loading="lazy" src="Pictures/IGNITE.webp" alt="" style="width: 75%; padding: 12.5%;">
+            <h4>IGNITE</h4>
+            <p>
+                IGNITE offers fun, inclusive, and structured programming to create community and enhance the lives of those we work with.
                 <br>
-                **Reimbursement and direct pay options available via self-direction
                 <br>
-                ***Spots filling quickly, <a href="mailto:jake@breakthroughfitco.com?subject=IGNITE">get yours now</a>!!!
-            </span>
-        </p>
+                <b>Packages:</b>
+                <br>
+                1x Per Week: $199/month
+                <br>
+                2x Per Week: $299/month
+                <br>
+                3x Per Week: $359/month
+                <br>
+                <br>
+                <b>Includes:</b>
+                <br>
+                Weekly classes
+                <br>
+                Complimentary Introductory Training Session
+                <br>
+                Community Nights
+                <br>
+                <br>
+                <span class="asterisks">
+                    *Classes will have always 2 qualified coaches and never exceed 5 participants to ensure personalization, progress, and results.
+                    <br>
+                    **Reimbursement and direct pay options available via self-direction
+                    <br>
+                    <!-- svelte-ignore a11y-missing-attribute -->
+                    ***Spots filling quickly, get yours now!!!
+                </span>
+            </p>
         </div>
-        <a class="greyButton" href="ignite">Learn More</a>
+        <span class="greyButton" on:click={() => IgniteInterest = true}>Reserve your spot</span>
     </div>
 </div>
+
+{#if PersonalTrainingInterest}
+    <EmailPopup
+        bind:visible={PersonalTrainingInterest}
+        type="Interest"
+        interest="Personal Training"
+        choices={{
+            "Single Session": ["60 Mins", "30 Mins"],
+            "Package": {
+                "30 Mins": ["1x Per Week", "2x Per Week", "3x Per Week"],
+                "60 Mins": ["1x Per Week", "2x Per Week", "3x Per Week"],
+            }
+        }}
+    />
+{/if}
+{#if IgniteInterest}
+    <EmailPopup
+        bind:visible={IgniteInterest}
+        type="Interest"
+        interest="IGNITE"
+        choices={{
+            "Package": [
+                "1x Per Week",
+                "2x Per Week",
+                "3x Per Week",
+            ]
+        }}
+    />
+{/if}
