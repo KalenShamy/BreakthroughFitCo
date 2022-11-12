@@ -9,7 +9,7 @@
         visible = false;
     }
 
-    let form = {}
+    let form: App.MailRequest = {}
 </script>
 
 <style>
@@ -41,15 +41,23 @@
         left: 50%;
         transform: translate(-50%, -50%);
         border-radius: 15px;
+        overflow: hidden;
+        color: white;
     }
-    #popupBox a {
-        text-decoration: none;
-        color: black;
+    #popupBox h1 {
+        text-align: center;
+        margin-bottom: 0;
+    }
+    #popupBox img {
+        width: 100%;
+        opacity: 0.85;
+        position: absolute;
+        z-index: -1;
     }
     #popupCloseButton {
         font-family: "Playfair Display", serif;
         transition: 0.5s;
-        color: black;
+        color: inherit;
         position: absolute;
         top: 15px;
         right: 15px;
@@ -60,19 +68,24 @@
         cursor: pointer;
     }
     #popupContents {
-        width: calc(100% - 65px);
         margin-inline: 15px;
         overflow: auto;
-    }
-    #popupContents h1 {
-        text-align: center;
-        margin-bottom: 0;
     }
     #popupContents h3 {
         margin-bottom: 0.75rem;
     }
     #popupContents input, #popupContents textarea {
         line-height: 1.25rem;
+        resize: none;
+        background: rgb(255,255,255,0.125);
+        border: 2px solid rgb(255,255,255,0.25);
+        border-radius: 5px;
+        color: inherit;
+    }
+    #popupContents input:focus-visible, #popupContents textarea:focus-visible {
+        outline: none;
+        background: rgb(255,255,255,0.35);
+        border: 2px solid rgb(255,255,255,0.75);
     }
     #popupContents * {
         width: calc(100% - 8px);
@@ -82,9 +95,10 @@
 <div id="popup">
     <!-- svelte-ignore missing-declaration -->
     <div id="popupBox" style="height:500px">
-        <span id="popupCloseButton" on:click={closePopup}>×</span>
+        <img src="Pictures/servicesBanner.webp" alt="">
+        <span id="popupCloseButton" on:click={closePopup}>&times;</span>
+        <h1>{interest} {type} Form</h1>
         <div id="popupContents">
-            <h1>{interest} {type} Form</h1>
             <h3>Name</h3>
             <input bind:value={form["name"]}>
             <h3>Email</h3>
