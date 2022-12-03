@@ -29,7 +29,9 @@ const mail = gmail({ version: "v1", auth: auth });
 // * OUTPUT: MailResponse
 export const POST: RequestHandler = async ({ request }: any) => {
 	try {
-		const data: App.MailRequest = await request.json();
+		const data: App.StandardMailRequest | App.InterestMailRequest = await request.json();
+
+		console.log(data);
 
 		let formattedData = {
 			type: makeHTMLSafe(data.type),
@@ -55,6 +57,8 @@ export const POST: RequestHandler = async ({ request }: any) => {
 				${data.when && "Client availability: " + data.when}
 			`;
 		}
+
+		console.log(formattedData);
 
 		// Create raw data for the email with the proper header information and a custom
 		// HTML template
@@ -84,6 +88,8 @@ export const POST: RequestHandler = async ({ request }: any) => {
 				</html>
 			`.replaceAll(/^	+/gm, "")
 		).toString("base64");
+
+		console.log(raw);
 
 		// Insert an email into the hello@ai-camp.org email with the form data received along with a header
 		// that says the email is from the provided email to provide a seamless email thread process

@@ -94,13 +94,6 @@
         bind:visible={PersonalTrainingInterest}
         type="Interest"
         interest="Personal Training"
-        choices={{
-            "Single Session": ["60 Mins", "30 Mins"],
-            "Package": {
-                "30 Mins": ["1x Per Week", "2x Per Week", "3x Per Week"],
-                "60 Mins": ["1x Per Week", "2x Per Week", "3x Per Week"],
-            }
-        }}
     />
 {/if}
 {#if IgniteInterest}
@@ -108,12 +101,5 @@
         bind:visible={IgniteInterest}
         type="Interest"
         interest="IGNITE"
-        choices={{
-            "Package": [
-                "1x Per Week",
-                "2x Per Week",
-                "3x Per Week",
-            ]
-        }}
     />
 {/if}

@@ -23,6 +23,7 @@
 
 	interface InterestMailRequest {
 		type: MailTypes.Interest;
+		subject: string;
 		name: string;
 		email: string;
 		phone?: string;
@@ -30,8 +31,6 @@
 		choice: string;
 		when?: string;
 	}
-
-	type MailRequest = StandardMailRequest | InterestMailRequest;
 
 	// Interface for contact form response data
 	interface MailResponse {
