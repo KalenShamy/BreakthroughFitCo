@@ -83,8 +83,6 @@ export const POST: RequestHandler = async ({ request }: any) => {
 			`.replaceAll(/^	+/gm, "")
 		).toString("base64");
 
-		console.log(raw);
-
 		// Insert an email into the hello@ai-camp.org email with the form data received along with a header
 		// that says the email is from the provided email to provide a seamless email thread process
 		mail.users.messages.insert({
