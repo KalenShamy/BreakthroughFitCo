@@ -9,11 +9,14 @@
         visible = false;
     }
 
-    let form: App.StandardMailRequest | App.InterestMailRequest | any = {}
+    let form: App.StandardMailRequest | App.InterestMailRequest | any = {};
 
     if (interest != "") {
-        form.interest = interest
-    } 
+        form.interest = interest;
+        form.type = "Interest";
+    } else {
+        form.type = "Standard";
+    }
 
     const submit = () => {
 		fetch("/api/gmail", {

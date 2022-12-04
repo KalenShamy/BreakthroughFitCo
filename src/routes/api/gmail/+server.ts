@@ -15,7 +15,7 @@ const auth = new OAuth2Client({
 });
 
 function makeHTMLSafe(str: string) {
-    return String(str).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;').replace(/\n/g, '<br>').replace(/\s/g, '&nbsp;');
+    return String(str).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;').replace(/\n/g, '<br>');
 }
 
 auth.setCredentials({
@@ -46,16 +46,16 @@ export const POST: RequestHandler = async ({ request }: any) => {
 			formattedData.phone = makeHTMLSafe(data.phone);
 		}
 
-		if (data.type == App.MailTypes.Standard) {
+		if (data.type == "Standard") {
 			formattedData.subject = makeHTMLSafe(data.subject);
 			formattedData.body = makeHTMLSafe(data.body)
-		} else if (data.type == App.MailTypes.Interest) {
-			formattedData.subject = makeHTMLSafe(data.interest);
+		} else if (data.type == "Interest") {
+			formattedData.subject = data.interest;
 			formattedData.body = `
-				${makeHTMLSafe(data.name)} is interested in <b>${makeHTMLSafe(data.choice)}</b> for <b>${makeHTMLSafe(data.interest)}</b>
-
-				${data.when && "Client availability: " + data.when}
-			`;
+				<b>Interest:</b> ${makeHTMLSafe(data.interest)}
+				<b>Client goals:</b><br><div style='width:calc(100% - 24px);background-color:rgb(235,235,235);border-radius:10px;color:rgb(21,21,21);padding:10px;border:2px solid transparent;'>${data.goals}</div>
+				<b>Client availability:</b><br><div style='width:calc(100% - 24px);background-color:rgb(235,235,235);border-radius:10px;color:rgb(21,21,21);padding:10px;border:2px solid transparent;'>${data.when}</div>
+			`.trim().replaceAll("\t","").replaceAll("\n","<br>");
 		}
 
 		console.log(formattedData);
@@ -65,25 +65,23 @@ export const POST: RequestHandler = async ({ request }: any) => {
 		const raw = Buffer.from(
 			`Delivered-To: trainedbyjake@gmail.com
 			Return-Path: <jake@breakthroughfitco.com>
-			From: <${formattedData.email}>
+			From: <jake@breakthroughfitco.com>
 			Reply-To: <jake@breakthroughfitco.com>
 			To: <trainedbyjake@gmail.com>
-			Subject: ${formattedData.type} - ${formattedData.subject}
+			Subject: ${formattedData.subject}
 			MIME-Version: 1.0
 			Content-Type: text/html; charset=us-ascii
 			<!DOCTYPE html>
 				<html>
 					<head>
 						<meta charset="UTF-8">
+
 					</head>
 					<body>
-						Name: ${formattedData.name}
-						<br>
-						Email: ${formattedData.email}
-						<br>
-						Phone: ${formattedData.phone}
-						<br>
-						Body: ${formattedData.body}
+						<b>Name:</b> ${formattedData.name}<br>
+						<b>Email Address:</b> ${formattedData.email}<br>
+						<b>Phone Number:</b> ${formattedData.phone}<br>
+						<b>Email Body:</b><br><br>${formattedData.body}
 					</body>
 				</html>
 			`.replaceAll(/^	+/gm, "")
