@@ -31,8 +31,6 @@ export const POST: RequestHandler = async ({ request }: any) => {
 	try {
 		const data: App.StandardMailRequest | App.InterestMailRequest = await request.json();
 
-		console.log(data);
-
 		let formattedData = {
 			type: makeHTMLSafe(data.type),
 			name: makeHTMLSafe(data.name),
@@ -50,7 +48,7 @@ export const POST: RequestHandler = async ({ request }: any) => {
 			formattedData.subject = makeHTMLSafe(data.subject);
 			formattedData.body = makeHTMLSafe(data.body)
 		} else if (data.type == "Interest") {
-			formattedData.subject = data.interest;
+			formattedData.subject = "Interest - " + data.interest;
 			formattedData.body = `
 				<b>Interest:</b> ${makeHTMLSafe(data.interest)}
 				<b>Client goals:</b><br><div style='width:calc(100% - 24px);background-color:rgb(235,235,235);border-radius:10px;color:rgb(21,21,21);padding:10px;border:2px solid transparent;'>${data.goals}</div>
@@ -58,14 +56,12 @@ export const POST: RequestHandler = async ({ request }: any) => {
 			`.trim().replaceAll("\t","").replaceAll("\n","<br>");
 		}
 
-		console.log(formattedData);
-
 		// Create raw data for the email with the proper header information and a custom
 		// HTML template
 		const raw = Buffer.from(
 			`Delivered-To: trainedbyjake@gmail.com
 			Return-Path: <jake@breakthroughfitco.com>
-			From: <jake@breakthroughfitco.com>
+			From: <${formattedData.email}>
 			Reply-To: <jake@breakthroughfitco.com>
 			To: <trainedbyjake@gmail.com>
 			Subject: ${formattedData.subject}

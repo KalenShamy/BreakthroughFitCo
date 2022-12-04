@@ -19,6 +19,18 @@
     }
 
     const submit = () => {
+        let valid: Array<string> | boolean = true;
+        if (form.type == "Interest") valid = validate_interest();
+        else if (form.type == "Standard") valid = validate_standard();
+
+        if (valid != true) {
+            for (let i = 0; i < valid.length; i++) {
+                let element = document.getElementById("form_" + valid[i]);
+                if (element) element.style.borderColor = "red";
+            }
+            return;
+        }
+
 		fetch("/api/gmail", {
 			method: "POST",
 			headers: {
@@ -26,7 +38,42 @@
 			},
 			body: JSON.stringify(form)
 		});
+        let contents = document.getElementById("popupContents")
+        if (contents) contents.style.top = "700px";
 	};
+
+    const check_email = (email: string) => {
+        return /^(?:[a-z0-9!#$%&'*+.=?^_`{|}~-]+|"(?:[\x01-\x08\x0b\x0c\x0e-\x1f\x21\x23-\x5b\x5d-\x7f]|\\[\x01-\x09\x0b\x0c\x0e-\x7f])+")@[a-zA-Z0-9-]{1,256}\.[a-zA-Z0-9-]{2,6}$/gi.test(email);
+    }
+    const check_phone = (phone: string) => {
+        return /^([0-9]{10})|^(\([0-9]{3}\) |[0-9]{3}-)[0-9]{3}-[0-9]{4}$/gi.test(phone);
+    }
+
+    const validate_interest = () => {
+        let unfilled = [];
+        if (!form.name) unfilled[unfilled.length] = "name";
+        if (!(form.email && check_email(form.email))) unfilled[unfilled.length] = "email";
+        if (form.phone && !check_phone(form.phone)) unfilled[unfilled.length] = "phone";
+        if (!form.goals) unfilled[unfilled.length] = "goals";
+        if (!form.when) unfilled[unfilled.length] = "when";
+        if (unfilled.toString() == [].toString()) return true;
+        return unfilled;
+    }
+    const validate_standard = () => {
+        let unfilled = [];
+        if (!form.name) unfilled[unfilled.length] = "name";
+        if (!(form.email && check_email(form.email))) unfilled[unfilled.length] = "email";
+        if (form.phone && check_phone(form.phone)) unfilled[unfilled.length] = "phone";
+        if (!form.subject) unfilled[unfilled.length] = "subject";
+        if (!form.body) unfilled[unfilled.length] = "body";
+        if (unfilled.toString() == [].toString()) return true;
+        return unfilled;
+    }
+
+    const input_fill = (input: string) => {
+        let element = document.getElementById("form_" + input);
+        if (element) element.style.borderColor = "";
+    }
 </script>
 
 <style>
@@ -75,6 +122,8 @@
     }
     #popupCloseButton {
         font-family: "Playfair Display", serif;
+        background: transparent;
+        border: none;
         transition: 0.5s;
         color: inherit;
         position: absolute;
@@ -89,10 +138,33 @@
     #popupContents {
         margin-inline: 15px;
         overflow: auto;
+        transition: 1s;
+        transition-delay: 0.5s;
+        position: relative;
+        top: 0px;
+        background: inherit;
+        z-index: 1;
+    }
+    #emailSuccess {
+        transition: 1s;
+        transition-delay: 0.5s;
+        position: absolute;
+        top: 40%;
+    }
+    #emailSuccess h1 {
+        padding-inline: 20px;
     }
     #popupContents h3 {
         margin-bottom: 0.75rem;
         color: black;
+        position: relative;
+    }
+    #popupContents h3 span {
+        position: absolute;
+        right: 5px;
+        top: 50%;
+        scale: 2;
+        width: fit-content;
     }
     #popupContents input, #popupContents textarea {
         color: black;
@@ -120,6 +192,7 @@
         overflow: hidden;
         position: relative;
         transition: 0.5s;
+        z-index: 2;
     }
     #popupContents button:hover, #popupContents button:focus-visible {
         background: white;
@@ -146,34 +219,36 @@
     #popupContents * {
         width: calc(100% - 8px);
     }
-    
 </style>
 
 <div id="popup">
     <!-- svelte-ignore missing-declaration -->
     <div id="popupBox" style="height:500px">
-        <span id="popupCloseButton" on:click={closePopup}>&times;</span>
+        <button id="popupCloseButton" on:click={closePopup}>&times;</button>
         <h1>{interest} {type} Form</h1>
         <div id="popupContents">
-            <h3>Name</h3>
-            <input bind:value={form.name}>
-            <h3>Email</h3>
-            <input bind:value={form.email}>
+            <h3>Name<span>*</span></h3>
+            <input id="form_name" on:change={() => input_fill("name")} bind:value={form.name}>
+            <h3>Email<span>*</span></h3>
+            <input id="form_email" on:change={() => input_fill("email")} bind:value={form.email}>
             <h3>Phone Number</h3>
-            <input bind:value={form.phone}>
+            <input id="form_phone" on:change={() => input_fill("phone")} bind:value={form.phone}>
             {#if type == "Standard"}
-                <h3>Subject</h3>
-                <input bind:value={form.subject}>
-                <h3>Body</h3>
-                <textarea bind:value={form.body} rows=4></textarea>
+                <h3>Subject<span>*</span></h3>
+                <input id="form_subject" on:change={() => input_fill("subject")} bind:value={form.subject}>
+                <h3>Body<span>*</span></h3>
+                <textarea id="form_body" on:change={() => input_fill("body")} bind:value={form.body} rows=4></textarea>
             {/if}
-            <h3>Tell us about your goals</h3>
-            <textarea bind:value={form.goals} rows=4></textarea>
             {#if type == "Interest"}
-                <h3>What days/times are best?</h3>
-                <textarea bind:value={form.when} rows=4></textarea>
+                <h3>Tell us about your goals<span>*</span></h3>
+                <textarea id="form_goals" on:change={() => input_fill("goals")} bind:value={form.goals} rows=4></textarea>
+                <h3>What days/times are best?<span>*</span></h3>
+                <textarea id="form_when" on:change={() => input_fill("when")} bind:value={form.when} rows=4></textarea>
             {/if}
             <button on:click={submit}>Send<span></span></button>
+        </div>
+        <div id="emailSuccess">
+            <h1>Thanks! We'll get back to you shortly.</h1>
         </div>
     </div>
 </div>
