@@ -354,6 +354,12 @@ footer {
   line-height: 30px;
   padding: 40px 0;
 }
+footer #credit {
+  text-decoration: none;
+}
+footer #credit:hover {
+  text-decoration: underline;
+}
 
 /* Services page */
 #servicesBanner {

@@ -1,8 +1,6 @@
 <script>
-    import EmailPopup from "$lib/components/EmailPopup.svelte";
-
-    let PersonalTrainingInterest = false;
-    let IgniteInterest = false;
+    let personalTrainingEmail = "mailto:jake@breakthroughfitco.com?subject=Personal%20Training%20Session%20Inquiry&body=Hey%21%0A%0AMy%20name%20is%20%28NAME%29%2C%20and%20I%27m%20interested%20in%20your%20Personal%20Training%20Sessions.%0AMy%20goals%20are%20%28GOALS%29.%0AThe%20days%20and%20times%20that%20would%20work%20best%20for%20me%20are%20%28DAYS%20AND%20TIMES%29.%0AIf%20you%20would%20like%20to%20talk%2C%20my%20phone%20number%20is%20%28NUMBER%29.%0A%0AI%20look%20forward%20to%20hearing%20from%20you%21"
+    let igniteEmail = "mailto:jake@breakthroughfitco.com?subject=IGNITE%20Inquiry&body=Hey%21%0A%0AMy%20name%20is%20%28NAME%29%2C%20and%20I%27m%20interested%20in%20your%20IGNITE%20Program.%0AMy%20goals%20are%20%28GOALS%29.%0AThe%20spots%20that%20would%20work%20best%20for%20me%20are%20%28DAYS%20AND%20TIMES%29.%0AIf%20you%20would%20like%20to%20talk%2C%20my%20phone%20number%20is%20%28NUMBER%29.%0A%0AI%20look%20forward%20to%20hearing%20from%20you%21"
 </script>
 
 <div id="servicesBanner">
@@ -47,7 +45,7 @@
                 3x Per Session: $60/session
             </p>
         </div>
-        <span class="greyButton" on:click={() => PersonalTrainingInterest = true}>Book your session</span>
+        <a class="greyButton" href={personalTrainingEmail}>Book your session</a>
     </div>
     <div class="service">
         <div class="serviceTop">
@@ -85,21 +83,6 @@
                 </span>
             </p>
         </div>
-        <span class="greyButton" on:click={() => IgniteInterest = true}>Reserve your spot</span>
+        <a class="greyButton" href={igniteEmail} target="_blank" rel="noreferrer">Reserve your spot</a>
     </div>
 </div>
-
-{#if PersonalTrainingInterest}
-    <EmailPopup
-        bind:visible={PersonalTrainingInterest}
-        type="Interest"
-        interest="Personal Training"
-    />
-{/if}
-{#if IgniteInterest}
-    <EmailPopup
-        bind:visible={IgniteInterest}
-        type="Interest"
-        interest="IGNITE"
-    />
-{/if}
