@@ -6,34 +6,4 @@ declare namespace App {
 	// interface PageData {}
 	// interface Error {}
 	// interface Platform {}
-
-	enum MailTypes {
-		Standard = "Standard",
-		Interest = "Interest",
-	}
-
-	interface StandardMailRequest {
-		type: MailTypes.Standard;
-		name: string;
-		email: string;
-		phone?: string;
-		subject: string;
-		body: string;
-	}
-
-	interface InterestMailRequest {
-		type: MailTypes.Interest;
-		subject: string;
-		name: string;
-		email: string;
-		phone?: string;
-		interest: string;
-		goals: string;
-		when: string;
-	}
-
-	// Interface for contact form response data
-	interface MailResponse {
-		success: boolean;
-	}
 }
