@@ -68,13 +68,13 @@
                     {/each}
                     {#if schedule.specials}
                         {#each schedule.specials as special}
-                            {special.time} @ <a href="{special.website}" target="_blank">{special.place}</a><br>
+                            {special.time} @ <a href="{special.website}" target="_blank" rel="noreferrer">{special.place}</a><br>
                         {/each}
                     {/if}
                 </p>
                 {#if schedule.isFull}
                     <div class="soldOut">
-                        <h1>SOLD OUT</h1>
+                        <h1>NO SPOTS LEFT</h1>
                     </div>
                 {/if}
             </span>

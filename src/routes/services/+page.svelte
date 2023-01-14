@@ -45,7 +45,7 @@
                 3x Per Session: $60/session
             </p>
         </div>
-        <a class="greyButton" href={personalTrainingEmail} target="_blank" rel="noreferrer">Book your session</a>
+        <a class="greyButton" href={personalTrainingEmail} target="_blank" rel="noreferrer">Get your first session</a>
     </div>
     <div class="service">
         <div class="serviceTop">
