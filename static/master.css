@@ -245,9 +245,9 @@ a {
   align-items: center;
 }
 #teamContents {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 400px));
+  justify-items: center;
   justify-content: center;
 }
 .teamMember {
@@ -353,6 +353,13 @@ footer {
   height: auto;   /* Height of the footer */
   line-height: 30px;
   padding: 40px 0;
+}
+footer #credit {
+  text-decoration: none;
+  margin-block: 13px;
+}
+footer #credit:hover {
+  text-decoration: underline;
 }
 
 /* Services page */
@@ -581,6 +588,7 @@ footer {
   left: 50%;
   margin: 0;
   white-space: nowrap;
+  font-size: 1.5em;
 }
 
 /* Mobile */

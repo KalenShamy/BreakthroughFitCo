@@ -76,7 +76,7 @@
                             </div>
                         {/if}
                     </div>
-                    <a class="teamMemberContact" target="_blank" href="mailto:{member.email}?subject=Breakthrough%20Fit%20Co">Contact</a>
+                    <a class="teamMemberContact" target="_blank" rel="noreferrer" href="mailto:{member.email}?subject=Breakthrough%20Fit%20Co">Contact</a>
                 </div>
             </div>
         {/each}
@@ -92,7 +92,7 @@
                 <h4>Special Olympics NY</h4>
                 <p>Special Olympics is changing the lives of people with intellectual disabilities.</p>
                 </div>
-                <a class="greyButton" target="_blank" href="https://www.specialolympics-ny.org/">Learn More</a>
+                <a class="greyButton" target="_blank" rel="noreferrer" href="https://www.specialolympics-ny.org/">Learn More</a>
             </div>
             <div class="partner">
                 <div>
@@ -100,7 +100,7 @@
                 <h4>Chewma</h4>
                 <p>The all-day snack that won't set you back!</p>
                 </div>
-                <a class="greyButton" target="_blank" href="https://www.chewma.com/">Learn More</a>
+                <a class="greyButton" target="_blank" rel="noreferrer" href="https://www.chewma.com/">Learn More</a>
             </div>
             <div class="partner">
                 <div>
@@ -108,7 +108,7 @@
                 <h4>CBD All Natural</h4>
                 <p>Helping you live natural, one drop at a time.</p>
                 </div>
-                <a class="greyButton" target="_blank" href="https://cbdlivenatural.com/">Learn More</a>
+                <a class="greyButton" target="_blank" rel="noreferrer" href="https://cbdlivenatural.com/">Learn More</a>
             </div>
         </div>
     </div>
