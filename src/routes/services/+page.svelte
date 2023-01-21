@@ -45,7 +45,7 @@
                 3x Per Session: $60/session
             </p>
         </div>
-        <a class="greyButton" href={personalTrainingEmail} target="_blank" rel="noreferrer">Get your first session</a>
+        <a class="greyButton" href={personalTrainingEmail} target="_blank" rel="noreferrer">Contact us now</a>
     </div>
     <div class="service">
         <div class="serviceTop">
@@ -84,5 +84,22 @@
             </p>
         </div>
         <a class="greyButton" href={igniteEmail} target="_blank" rel="noreferrer">Reserve your spot</a>
+    </div>
+    <div class="service" style="background: inherit;">
+        <div class="serviceTop" style="margin-block: 20px;">
+            <h4>Membership</h4>
+            <p style="margin-bottom: 0;">
+                $500/month
+                <br>
+                <br>
+                <b>Includes:</b>
+                <br>
+                8 IGNITE Fitness Classes
+                <br>
+                3 Personal Training Sessions
+                <br>
+                Daily Facility Access 
+            </p>
+        </div>
     </div>
 </div>
