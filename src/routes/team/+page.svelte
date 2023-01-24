@@ -35,7 +35,9 @@
             email: "alexis@breakthroughfitco.com",
             bio: `Alexis has been working with the special needs community since 2012. She has a passion for working with children and families, fitness, and filmmaking. Her goal is to allow individuals to explore their physical and creative abilities, building self esteem and confidence in their ability to positively express themselves. She credits working as an Adaptive Special Needs Trainer and Behavioral Therapist as one of the most rewarding experiences in her career to date.`,
             certifications: [
-                "SPECIAL STRONG CERTIFIED",
+                "SPECIAL NEEDS GROUP INSTRUCTOR",
+                "SPECIAL NEEDS NUTRITION COACH",
+                "SPECIAL NEEDS PERSONAL TRAINER",
             ]
         }, // Alexis
         {
@@ -45,7 +47,9 @@
             email: "jake@breakthroughfitco.com",
             bio: `Vadid is from Haiti and has been working as a trainer since 2018. He has prior experience working with the special needs community in their group homes. He has a deep passion for fitness that he'd love to share with everyone, no matter their abilities. He enjoys running in his free time and his favorite food is pizza.`,
             certifications: [
-                "SPECIAL STRONG CERTIFIED",
+                "SPECIAL NEEDS GROUP INSTRUCTOR",
+                "SPECIAL NEEDS NUTRITION COACH",
+                "SPECIAL NEEDS PERSONAL TRAINER",
             ]
         }, // Vadid
         {
