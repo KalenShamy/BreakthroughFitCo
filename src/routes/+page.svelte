@@ -69,18 +69,18 @@
         {/each}
         <p id="Welcome_Text">Where all are Welcome</p>
         <div class="SlideshowSkipButtons">
-        <div>
-            {#each Array(imageCount) as _, i}
-                <!-- svelte-ignore a11y-missing-content -->
-                {#if i == 0}
-                    <!-- svelte-ignore a11y-click-events-have-key-events -->
-                    <a id="WB{i+1}" class="WB" on:click={() => {imageChange(i)}} style="background-color: rgb(175,175,175)" bind:this={images[i][1]} />
-                {:else}
-                    <!-- svelte-ignore a11y-click-events-have-key-events -->
-                    <a id="WB{i+1}" class="WB" on:click={() => {imageChange(i)}} bind:this={images[i][1]} />
-                {/if}
-            {/each}
-        </div>
+            <div>
+                {#each Array(imageCount) as _, i}
+                    <!-- svelte-ignore a11y-missing-content -->
+                    {#if i == 0}
+                        <!-- svelte-ignore a11y-click-events-have-key-events -->
+                        <a id="WB{i+1}" class="WB" on:click={() => {imageChange(i)}} style="background-color: rgb(175,175,175)" bind:this={images[i][1]} />
+                    {:else}
+                        <!-- svelte-ignore a11y-click-events-have-key-events -->
+                        <a id="WB{i+1}" class="WB" on:click={() => {imageChange(i)}} bind:this={images[i][1]} />
+                    {/if}
+                {/each}
+            </div>
         </div>
     </div>
 </div>

@@ -1,8 +1,7 @@
 <script lang="ts">
-  import { getRandomJoke } from "$lib/dadJokes";
+    import { getRandomJoke } from "$lib/dadJokes";
 
-  const joke = getRandomJoke();
-  
+    const joke = getRandomJoke();
 </script>
 
 <svelte:head>
