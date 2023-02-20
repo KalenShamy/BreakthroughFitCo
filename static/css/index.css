@@ -1,0 +1,234 @@
+#Welcome {
+    background: rgb(22,22,22);
+    flex-direction: column;
+    position: relative;
+    overflow: hidden;
+    max-width: 1000px;
+    width: 100%;
+    border-radius: 15px;
+  
+    -khtml-user-select: none;
+    -o-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    -webkit-user-select: none;
+    user-select: none;
+}
+#Welcome img {
+    width: 100%;
+    z-index: 0;
+    transition: 0.5s;
+}
+#Welcome_Text {
+    z-index: 1;
+    text-shadow: 0 0 12px black, 0 0 12px black;
+    margin: 0;
+    position: absolute;
+    top: 1em;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    color: white;
+    font-family: "Playfair Display", serif;
+    font-size: 32px;
+    font-weight: 400;
+    line-height: 40px;
+    text-align: center;
+    width: 100%;
+}
+.SlideshowSkipButtons {
+    z-index: 2;
+    background-color: rgb(22,22,22);
+    height: 25px;
+}
+.SlideshowSkipButtons div {
+    display: flex;
+    justify-content: center;
+}
+.SlideshowSkipButtons a {
+    display: block;
+    width: 15px;
+    height: 15px;
+    border-radius: 100%;
+    margin: 5px 5px;
+    transition: 0.5s;
+    z-index: 0;
+}
+.WB {
+    background-color: rgb(75,75,75);
+}
+.WI {
+    display: none;
+}
+.WB:hover {
+    background-color: white;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+#Welcome_Text_Small {
+    color: rgb(145, 145, 145);
+    font-family: arial, sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 1.5;
+    text-align: center;
+    margin: 1em 24px auto 24px;
+}
+#Welcome_Text_Small p {
+    margin: 0;
+}
+#Welcome_Text_Small a {
+    margin: 0;
+    color: rgb(145, 145, 145);
+    font-weight: 800;
+}
+#readytobreakthrough {
+    background-color: rgb(22, 22, 22);
+    padding: 40px 0 0.02px 0;
+    font-family: arial, sans-serif;
+    margin: 0 0 40px 0;
+}
+#rtbt_contents {
+    display: flex;
+}
+#readytobreakthrough h4 {
+    color: rgb(247, 247, 247);
+    line-height: 31.25px;
+    font-size: 25px;
+    font-weight: 400;
+    margin: 0 0 24px 0;
+}
+#readytobreakthrough p {
+    color: rgb(164, 164, 164);
+    line-height: 27px;
+    font-size: 18px;
+    margin: 0;
+}
+#map {
+    width: 100%;
+}
+#mapFrame {
+    width: 100%;
+    height: 100%;
+}
+#socials {
+    display: flex;
+    justify-content: center;
+}
+#socials a {
+    width: 32px;
+    height: 32px;
+    padding: 15px;
+    margin: 17px;
+    text-align: center;
+    border-radius: 15px;
+    transition: 0.5s;
+}
+#socials a:hover {
+    transition: 0.5s;
+    background: rgb(225,225,225);
+}
+#socials a:active {
+    transition: 0.1s;
+    background: rgb(215,215,215);
+    border-radius: 5px;
+}
+
+/* Mobile */
+@media screen and (max-width: 649px) {
+    #Welcome {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        overflow: hidden;
+    }
+    .SlideshowSkipButtons a {
+        margin: 5px 15px;
+    }
+    #rtbt_contents {
+        flex-direction: column;
+        align-items: center;
+    }
+    #rtbt_image {
+        max-width: 100%;
+        margin: 0 0 24px 0;
+        order: -1;
+    }
+    #map {
+        height: 320px;
+        margin: 0 auto 40px 0;
+    }
+    #subMap, #rtbt_image noscript {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    #Welcome_Text {
+        font-size: 24px;
+    }
+    .SlideshowSkipButtons a {
+        margin: 5px 10px;
+    }
+}
+
+/* Tablet */
+@media screen and (min-width: 650px) and (max-width: 938px) {
+    #Welcome {
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: flex-start;
+        align-items: stretch;
+        align-content: stretch;
+    }
+    .SlideshowSkipButtons a {
+        margin: 5px 15px;
+    }
+    #rtbt_contents{
+        justify-content: space-evenly;
+        align-items: center;
+    }
+    #rtbt_image {
+        max-width: 40%;
+        min-width: 350px;
+        margin: 0 0 0 25px;
+    }
+    #map {
+        display: none;
+    }
+    #subMap {
+        margin-top: 20px;
+        height: 420px;
+        width: 100%;
+        border-radius: 15px;
+    }
+}
+
+
+/* Computer */
+@media screen and (min-width: 938px) {
+    #Welcome {
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: flex-start;
+        align-items: stretch;
+        align-content: stretch;
+    }
+    #rtbt_contents{
+        justify-content: space-evenly;
+        align-items: center;
+    }
+    #rtbt_image {
+        max-width: 40%;
+        min-width: 500px;
+        margin: 0 0 0 25px;
+    }
+    #map {
+        display: none;
+    }
+    #subMap {
+        margin-top: 20px;
+        height: 420px;
+        width: 100%;
+        border-radius: 15px;
+    }
+}

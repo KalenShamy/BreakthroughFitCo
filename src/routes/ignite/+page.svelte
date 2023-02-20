@@ -1,3 +1,7 @@
+<svelte:head>
+    <link rel="stylesheet" href="IGNITE.css">
+</svelte:head>
+
 <script lang="ts">
 	import { schedule_update } from "svelte/internal";
 

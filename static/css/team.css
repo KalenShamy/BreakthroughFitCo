@@ -1,0 +1,193 @@
+#ourteam {
+    background-color: rgb(22, 22, 22);
+    padding-block: 40px;
+    margin: 0 0 40px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#teamContents {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 400px));
+    justify-items: center;
+    justify-content: center;
+}
+.teamMember {
+    position: relative;
+    display: flex;
+    justify-content: flex-start;
+    margin: 5px;
+    transition: 0.25s border-radius;
+    border-radius: 15px;
+    overflow: hidden;
+    max-width: 400px;
+}
+.teamMember:hover {
+    border-radius: 5px;
+}
+.teamMember img {
+    width: 100%;
+}
+.teamMember p {
+    margin: 0 0 24px 0;
+}
+.teamMemberText {
+    position: absolute;
+    width: calc(100% - 30px);
+    height: calc(100% - 30px);
+    padding: 15px;
+    background: linear-gradient(180deg, rgba(0,0,0,0.5) 15%, rgba(0,0,0,0) 50%, rgba(0,0,0,0) 100%);
+    transition: 0.25s background-color;
+
+    font-family: arial, sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 27px;
+    color: rgb(164, 164, 164);
+}
+.teamMemberText:hover {
+    background-color: rgba(0,0,0,0.75);
+}
+.teamMemberName {
+    color: rgb(247, 247, 247);
+    font-size: 25px;
+    line-height: 31.25px;
+    font-weight: 400;
+    margin: 0 0 24px 0;
+}
+.teamMemberText:hover .teamMemberTextExtra {
+    height: 50%;
+    overflow: auto;
+}
+.teamMemberTextExtra {
+    transition: 0.5s;
+    height: 0;
+    overflow: hidden;
+    position: absolute;
+    bottom: 3em;
+    padding-right: 15px;
+    color: rgb(215,215,215);
+}
+.teamMemberTextExtra h1 {
+    font-size: 20px;
+}
+.teamMemberCerts {
+    line-height: calc(1em + 10px);
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.teamMemberCertChip {
+    background: rgba(0,0,0,0.75);
+    padding: 7px;
+    border-radius: 10px;
+    color: white;
+    margin: 2px;
+}
+a.teamMemberContact {
+    display: block;
+    background: rgb(22, 22, 22);
+    border: solid transparent 1px;
+    border-bottom: none;
+    position: absolute;
+    padding: 5px;
+    border-top-right-radius: 10px;
+    text-decoration: none;
+    bottom: 0;
+    border-top-left-radius: 10px;
+    transition: 0.25s;
+    color: white;
+}
+a.teamMemberContact:hover {
+    padding-bottom: 3em;
+}
+.teamMemberText:hover a.teamMemberContact {
+    background: rgb(30, 30, 30);
+    border: solid rgba(255,255,255,0.25) 1px;
+    border-bottom: none;
+}
+#partners {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    align-content: center;
+    align-items: stretch;
+}
+.partner {
+    margin: 0 24px 48px 24px;
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(243, 243, 243);
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 15px;
+    overflow: hidden;
+}
+.partner img {
+    width: 100%;
+    margin: 0 0 30px 0;
+    object-fit: cover;
+    background: rgb(150, 150, 150);
+}
+.partner h4 {
+    color: rgb(27, 27, 27);
+    text-align: center;
+    font-family: arial, sans-serif;
+    font-size: 25px;
+    font-weight: 400;
+    letter-spacing: 1.125px;
+    line-height: 31.25px;
+    margin: 0 0 24px 0;
+    padding: 0 32px;
+}
+.partner p {
+    color: rgb(94, 94, 94);
+    text-align: center;
+    font-family: arial, sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 27px;
+    margin: 0 0 24px 0;
+    padding: 0 32px;
+}
+
+/* Mobile */
+@media screen and (max-width: 649px) {
+    .teamMember {
+        flex-direction: column;
+        align-items: center;
+    }
+    #partners {
+        margin: 0;
+    }
+    .partner {
+        width: 100%;
+    }
+}
+
+/* Tablet */
+@media screen and (min-width: 650px) and (max-width: 938px) {
+    .teamMember {
+        flex-direction: column;
+        align-items: center;
+    }
+    #partners {
+        max-width: 100%;
+        margin: 0;
+    }
+    .partner {
+        width: 42.4195%;
+    }
+}
+
+/* Computer */
+@media screen and (min-width: 938px) {
+    .teamMember {
+        flex-direction: row;
+        align-items: flex-start;
+    }
+    .partner {
+        width: 27.775%;
+    }
+}

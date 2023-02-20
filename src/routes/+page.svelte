@@ -1,3 +1,7 @@
+<svelte:head>
+    <link rel="stylesheet" href="css/index.css">
+</svelte:head>
+
 <script lang="ts">
     let imageCount = 7;
     let images: (HTMLImageElement | HTMLAnchorElement)[][] = Array.from(Array(imageCount)).map(() => []);
@@ -43,20 +47,6 @@
         else imageChange(currentImage+1);
     }, 5 * 1000);
 </script>
-
-<style>
-    .WB {
-        background-color: rgb(75,75,75);
-    }
-    .WI {
-        display: none;
-    }
-    .WB:hover {
-        background-color: white;
-        margin-left: 10px;
-        margin-right: 10px;
-    }
-</style>
 
 <div class="padder"> <!-- Padder for welcome box -->
     <div id="Welcome" class="centerBox">

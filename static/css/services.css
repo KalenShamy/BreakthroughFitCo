@@ -1,0 +1,132 @@
+#servicesBanner {
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.24) 0%, rgba(0, 0, 0, 0.24) 100%), url("Pictures/servicesBanner.webp");
+    background-repeat: no-repeat;
+    background-size: auto, cover;
+    background-position: 50% 50%;
+    font-family: arial, sans-serif;
+    text-align: center;
+    padding: 60px 0;
+    margin: 0 0 40px 0;
+}
+#servicesBanner h1 {
+    color: rgb(247, 247, 247);
+    font-weight: 400;
+    margin: 0;
+    font-size: 44px;
+    line-height: 55px;
+    letter-spacing: 1.98px;
+}
+#CAS {
+    padding: 40px 24px 91px 24px;;
+    text-align: center;
+}
+#CAS h4 {
+    color: rgb(24, 24, 24);
+    margin: 0 auto 24px auto;
+    font-family: arial, sans-serif;
+    font-size: 25px;
+    font-weight: 400;
+    letter-spacing: 1.125px;
+    line-height: 31.25px;
+}
+#CAS p {
+    color: rgb(94, 94, 94);
+    margin: 0 auto;
+    font-family: arial, sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    letter-spacing: normal;
+    line-height: 27px;
+}
+#services {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    align-content: center;
+    align-items: stretch;
+}
+.service {
+    margin: 0 24px 48px 24px;
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(243, 243, 243);
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 15px;
+    overflow: hidden;
+}
+.service img {
+    width: 100%;
+    margin: 0 0 30px 0;
+    object-fit: cover;
+    background: rgb(150, 150, 150);
+}
+.service h4 {
+    color: rgb(27, 27, 27);
+    text-align: center;
+    font-family: arial, sans-serif;
+    font-size: 25px;
+    font-weight: 400;
+    letter-spacing: 1.125px;
+    line-height: 31.25px;
+    margin: 0 0 24px 0;
+    padding: 0 32px;
+}
+.service p {
+    color: rgb(94, 94, 94);
+    text-align: center;
+    font-family: arial, sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 27px;
+    margin: 0 0 24px 0;
+    padding: 0 32px;
+}
+.service a {
+    margin-top: 25px;
+}
+.serviceTop {
+    width: 100%;
+}
+
+  /* Mobile */
+@media screen and (max-width: 649px) {
+    #services {
+      margin: 0;
+    }
+    .service {
+      width: 100%;
+    }
+    #CAS h4, #CAS p {
+        width: 100%;
+        max-width: 100%;
+        border-radius: 0;
+        margin-left: 0;
+        margin-right: 0;
+    }
+}
+
+/* Tablet */
+@media screen and (min-width: 650px) and (max-width: 938px) {
+    #CAS h4, #CAS p {
+        max-width: 80%;
+    }
+    #services {
+        max-width: 100%;
+        margin: 0;
+    }
+    .service {
+        width: 42.4195%;
+    }
+}
+
+/* Computer */
+@media screen and (min-width: 938px) {
+    #CAS h4, #CAS p {
+        max-width: 50%;
+    }
+    .service {
+        width: 42.4195%;
+    }
+}

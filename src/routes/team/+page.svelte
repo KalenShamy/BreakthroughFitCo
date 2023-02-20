@@ -1,3 +1,7 @@
+<svelte:head>
+    <link rel="stylesheet" href="css/team.css">
+</svelte:head>
+
 <script lang="ts">
     var staff = [
         {
