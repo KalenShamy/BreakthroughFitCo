@@ -53,6 +53,53 @@
     transition: 0.5s;
     z-index: 0;
 }
+#Welcome:hover .Arrow, #Welcome:hover #ArrowFiller {
+    opacity: 1;
+}
+#Welcome .Arrow {
+    opacity: 0;
+    transition: 0.25s;
+    position: absolute;
+    top: 0;
+    width: 25%;
+    height: 100%;
+    color: white;
+}
+#Welcome .Arrow span {
+    display: block;
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    font-size: 50px;
+    transition: 0.25s;
+}
+#Welcome .Arrow:hover span {
+    text-shadow: 2px 2px 5px white;
+}
+#Welcome #ArrowLeft {
+    left: 0;
+    background: linear-gradient(to right, rgba(22,22,22,1) 0%, rgba(22,22,22,0.8) 25%, rgba(22,22,22,0.4) 100%);
+}
+#Welcome #ArrowLeft span {
+    left: 25%;
+}
+#Welcome #ArrowRight {
+    right: 0;
+    background: linear-gradient(to left, rgba(22,22,22,1) 0%, rgba(22,22,22,0.8) 25%, rgba(22,22,22,0.4) 100%);
+}
+#Welcome #ArrowRight span {
+    right: 25%;
+}
+#Welcome #ArrowFiller {
+    opacity: 0;
+    transition: 0.25s;
+    background-color: rgb(22,22,22,0.4);
+    width: 50%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 25%;
+}
 .WB {
     background-color: rgb(75,75,75);
 }

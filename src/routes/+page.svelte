@@ -7,6 +7,7 @@
     let images: (HTMLImageElement | HTMLAnchorElement)[][] = Array.from(Array(imageCount)).map(() => []);
     let currentImage = 0;
     let isChanging = false;
+    let interacted = false;
 
     function sleep(ms: number) {
        return new Promise(resolve => setTimeout(resolve, ms));
@@ -43,9 +44,24 @@
     }
 
     setInterval(() => {
+        if (interacted) return;
         if (currentImage == imageCount - 1) imageChange(0);
         else imageChange(currentImage+1);
     }, 5 * 1000);
+
+    const imageChangeLeft = () => {
+        console.log("left");
+        interacted = true;
+        if (currentImage == 0) imageChange(imageCount - 1);
+        else imageChange(currentImage-1);
+    }
+
+    const imageChangeRight = () => {
+        console.log("right");
+        interacted = true;
+        if (currentImage == imageCount - 1) imageChange(0);
+        else imageChange(currentImage+1);
+    }
 </script>
 
 <div class="padder"> <!-- Padder for welcome box -->
@@ -72,6 +88,11 @@
                 {/each}
             </div>
         </div>
+        <!-- svelte-ignore a11y-click-events-have-key-events -->
+        <div class="Arrow" id="ArrowLeft" on:click={imageChangeLeft}><span>&lt;</span></div>
+        <!-- svelte-ignore a11y-click-events-have-key-events -->
+        <div class="Arrow" id="ArrowRight" on:click={imageChangeRight}><span>&gt;</span></div>
+        <div id="ArrowFiller"></div>
     </div>
 </div>
 <div id="readytobreakthrough">
