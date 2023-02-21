@@ -1,0 +1,15 @@
+#calendar {
+    border-width: 0;
+    display: block;
+    margin: auto;
+    filter: grayscale(1);
+    height: max(calc(100vh - 325px), 600px);
+    width: calc(1.5 * max(calc(100vh - 325px), 600px));
+    max-width: 100%;
+}
+
+@media screen and (max-width: 650px) {
+    #calendar {
+        height: calc(100vh - 325px);
+    }
+}

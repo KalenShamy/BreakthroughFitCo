@@ -30,6 +30,7 @@
         <a href="team" class="NavLink">Team</a>
         <a href="services" class="NavLink">Services</a>
         <a href="ignite" class="NavLink">Ignite</a>
+        <a href="events" class="NavLink">Events</a>
         <a href="https://clients.mindbodyonline.com/ASP/su1.asp?studioid=5721621" class="NavLink" target="_blank" rel="noreferrer">Portal</a>
     </div>
     <div id="mobileNavOverlay" bind:this={mobileNavOverlay}>
@@ -40,6 +41,7 @@
             <a href="team" class="NavLink" on:click={closeNav}>Team</a>
             <a href="services" class="NavLink" on:click={closeNav}>Services</a>
             <a href="ignite" class="NavLink" on:click={closeNav}>Ignite</a>
+            <a href="events" class="NavLink" on:click={closeNav}>Events</a>
             <a href="https://clients.mindbodyonline.com/ASP/su1.asp?studioid=5721621" class="NavLink" target="_blank" rel="noreferrer">Portal</a>
         </div>
     </div>
