@@ -1,5 +1,5 @@
 <svelte:head>
-    <link rel="stylesheet" href="IGNITE.css">
+    <link rel="stylesheet" href="css/IGNITE.css">
 </svelte:head>
 
 <script lang="ts">
