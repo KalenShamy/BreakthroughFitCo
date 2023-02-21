@@ -3,8 +3,6 @@
 </svelte:head>
 
 <script lang="ts">
-	import { schedule_update } from "svelte/internal";
-
     const igniteSchedule = [
         {
             day: "Monday",
