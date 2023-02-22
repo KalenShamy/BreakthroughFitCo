@@ -69,7 +69,6 @@
     display: block;
     position: absolute;
     top: 50%;
-    transform: translate(-50%,-50%);
     font-size: 50px;
     transition: 0.25s;
 }
@@ -82,6 +81,7 @@
 }
 #Welcome #ArrowLeft span {
     left: 25%;
+    transform: translate(25%,-50%);
 }
 #Welcome #ArrowRight {
     right: 0;
@@ -89,6 +89,7 @@
 }
 #Welcome #ArrowRight span {
     right: 25%;
+    transform: translate(-25%,-50%);
 }
 #Welcome #ArrowFiller {
     opacity: 0;
