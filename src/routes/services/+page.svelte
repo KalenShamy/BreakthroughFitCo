@@ -62,7 +62,7 @@
                 <br>
                 <b>Single Class Rate:</b>
                 <br>
-                $60/class
+                $50/class
                 <br>
                 <br>
                 <b>Packages:</b>
