@@ -19,7 +19,8 @@
         <div class="serviceTop">
             <img loading="lazy" alt="" src="Pictures/personalTraining.webp">
             <h4>Personal Training</h4>
-            <p>First session on us!
+            <p>
+                First session on us!
                 <br>
                 <br>
                 <b>Single Session Rates:</b>
@@ -59,6 +60,11 @@
                 IGNITE offers fun, inclusive, and structured programming to create community and enhance the lives of those we work with.
                 <br>
                 <br>
+                <b>Single Class Rate:</b>
+                <br>
+                $60/class
+                <br>
+                <br>
                 <b>Packages:</b>
                 <br>
                 1x Per Week: $199/month
@@ -88,22 +94,5 @@
             </p>
         </div>
         <a class="greyButton" href={igniteEmail} target="_blank" rel="noreferrer">Reserve your spot</a>
-    </div>
-    <div class="service" style="background: inherit;">
-        <div class="serviceTop" style="margin-block: 20px;">
-            <h4>Membership</h4>
-            <p style="margin-bottom: 0;">
-                $500/month
-                <br>
-                <br>
-                <b>Includes:</b>
-                <br>
-                8 IGNITE Fitness Classes
-                <br>
-                3 Personal Training Sessions
-                <br>
-                Daily Facility Access 
-            </p>
-        </div>
     </div>
 </div>
