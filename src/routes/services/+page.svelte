@@ -54,7 +54,7 @@
     </div>
     <div class="service">
         <div class="serviceTop">
-            <img loading="lazy" src="Pictures/IGNITE.webp" alt="" style="width: 75%; padding: 12.5%;">
+            <img loading="lazy" src="Pictures/ignitePicture.webp" alt="">
             <h4>IGNITE</h4>
             <p>
                 IGNITE offers fun, inclusive, and structured programming to create community and enhance the lives of those we work with.

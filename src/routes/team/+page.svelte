@@ -5,11 +5,11 @@
 <script lang="ts">
     var staff = [
         {
-            name: "Jake Allyne",
+            name: "Jake",
             title: "President & CEO",
-            img: "JakeAllyne.webp",
+            img: "Jake.webp",
             email: "jake@breakthroughfitco.com",
-            bio: `Jake Allyne is the founder and CEO of Breakthrough Fit Co. With 8 years of experience, Jake specializes in exercise programming to establish proper biomechanics and correct movement patterns within a wide variety of goals. Jake also has a great deal of experience with the special needs community and it is his passion to create equal access to health and fitness for that community. His favorite food is sushi and you can often find him listening to Frank Sinatra. A quote he lives by is "if you can dream it, you can achieve it."`,
+            bio: `Jake is the founder and CEO of Breakthrough Fit Co. With 8 years of experience, Jake specializes in exercise programming to establish proper biomechanics and correct movement patterns within a wide variety of goals. Jake also has a great deal of experience with the special needs community and it is his passion to create equal access to health and fitness for that community. His favorite food is sushi and you can often find him listening to Frank Sinatra. A quote he lives by is "if you can dream it, you can achieve it."`,
             certifications: [
                 "NASM CPT",
                 "NASM PES",
@@ -23,19 +23,19 @@
             ]
         }, // Jake
         {
-            name: "Stephen Goodman",
+            name: "Steve",
             title: "CFO & COO",
-            img: "StephenGoodman.webp",
+            img: "Steve.webp",
             email: "steve@breakthroughfitco.com",
-            bio: `Stephen is our CFO at Breakthrough Fit Co. He holds his Bachelor's Degree in Kinesiology from SUNY Cortland, as well as his MBA from Mercy College, graduating Summa Cum Laude. Stephen is a life-long resident of Westchester, and in his free time, enjoys exploring the beautiful nature the county has to offer, from hiking Bear Mountain, to the scenic Riverwalk in Tarrytown. Stephen is also a head coach for the Sound Shore Stars Special Olympics Team. His favorite food is Chicken Parmigiana! A quote he lives by is "those who say they can and those that say they can't are both usually right."`,
+            bio: `Steve is our CFO at Breakthrough Fit Co. He holds his Bachelor's Degree in Kinesiology from SUNY Cortland, as well as his MBA from Mercy College, graduating Summa Cum Laude. Steve is a life-long resident of Westchester, and in his free time, enjoys exploring the beautiful nature the county has to offer, from hiking Bear Mountain, to the scenic Riverwalk in Tarrytown. Steve is also a head coach for the Sound Shore Stars Special Olympics Team. His favorite food is Chicken Parmigiana! A quote he lives by is "those who say they can and those that say they can't are both usually right."`,
             certifications: [
                 "NASM CPT",
             ]
-        }, // Stephen
+        }, // Steve
         {
-            name: "Alexis Grier",
-            title: "Coach",
-            img: "AlexisGrier.webp",
+            name: "Alexis",
+            title: "Director of Client Relations",
+            img: "Alexis.webp",
             email: "alexis@breakthroughfitco.com",
             bio: `Alexis has been working with the special needs community since 2012. She has a passion for working with children and families, fitness, and filmmaking. Her goal is to allow individuals to explore their physical and creative abilities, building self esteem and confidence in their ability to positively express themselves. She credits working as an Adaptive Special Needs Trainer and Behavioral Therapist as one of the most rewarding experiences in her career to date.`,
             certifications: [
@@ -46,10 +46,16 @@
             ]
         }, // Alexis
         {
-            name: "Vadid Bienaime",
+            name: "Chris",
             title: "Coach",
-            img: "VadidBienaime.webp",
-            email: "jake@breakthroughfitco.com",
+            img: "Chris.webp",
+            email: "chris@breakthroughfitco.com",
+            bio: ``,
+        }, // Chris
+        {
+            name: "Vadid",
+            title: "Coach",
+            img: "Vadid.webp",
             bio: `Vadid is from Haiti and has been working as a trainer since 2018. He has prior experience working with the special needs community in their group homes. He has a deep passion for fitness that he'd love to share with everyone, no matter their abilities. He enjoys running in his free time and his favorite food is pizza.`,
             certifications: [
                 "ADAPTIVE SPECIAL NEEDS GROUP INSTRUCTOR CERTIFICATION",
@@ -59,12 +65,47 @@
             ]
         }, // Vadid
         {
-            name: "Michelle Pachon",
-            title: "Massage Therapist",
-            img: "MichellePachon.webp",
-            email: "michellesmassages14@gmail.com",
-            bio: `Meet Michelle Pachon, our NYS Licensed Massage Therapist and 200-hour Yoga Alliance Certified Instructor! Michelle has been a practicing Massage Therapist since 2015 and has extensive background in different restorative and regenerative massage styles such as Swedish, Myofascial release, Sport, Lymphatic, Prenatal, and Geriatric massage. She’s also known for her amazing Hatha, Power flow, Vinyasa flow and deep stretch yoga classes. Michelle is the best addition to your self-care routine!`,
-        }, // Michelle
+            name: "Janie",
+            title: "Coach",
+            img: "Janie.webp",
+            bio: ``
+        }, // Janie
+        {
+            name: "James",
+            title: "Coach",
+            img: "James.webp",
+            bio: ``
+        }, // James
+        {
+            name: "Dave",
+            title: "Coach",
+            img: "Dave.webp",
+            bio: ``
+        }, // Dave
+        {
+            name: "Amy",
+            title: "Coach",
+            img: "Amy.webp",
+            bio: ``
+        }, // Amy
+        /*{
+            name: "Heidi",
+            title: "Coach",
+            img: "Heidi.webp",
+            bio: ``
+        }, // Heidi*/
+        {
+            name: "Rich",
+            title: "Coach",
+            img: "Rich.webp",
+            bio: ``
+        }, // Rich
+        {
+            name: "Deb",
+            title: "Coach",
+            img: "Deb.webp",
+            bio: ``
+        }, // Deb
     ]
 </script>
 
@@ -86,7 +127,9 @@
                             </div>
                         {/if}
                     </div>
-                    <a class="teamMemberContact" target="_blank" rel="noreferrer" href="mailto:{member.email}?subject=Breakthrough%20Fit%20Co">Contact</a>
+                    {#if member.email}
+                        <a class="teamMemberContact" target="_blank" rel="noreferrer" href="mailto:{member.email}?subject=Breakthrough%20Fit%20Co">Contact</a>
+                    {/if}
                 </div>
             </div>
         {/each}
@@ -106,19 +149,19 @@
             </div>
             <div class="partner">
                 <div>
-                <img loading="lazy" alt="" src="Pictures/Chewma.webp">
-                <h4>Chewma</h4>
-                <p>The all-day snack that won't set you back!</p>
+                <img loading="lazy" alt="" src="Pictures/ShamesJCC.webp">
+                <h4>Shames JCC</h4>
+                <p>Shames JCC is a Jewish community center in Tarrytown.</p>
                 </div>
-                <a class="greyButton" target="_blank" rel="noreferrer" href="https://www.chewma.com/">Learn More</a>
+                <a class="greyButton" target="_blank" rel="noreferrer" href="https://www.shamesjcc.org/">Learn More</a>
             </div>
             <div class="partner">
                 <div>
-                <img loading="lazy" alt="" src="Pictures/CBDAllNatural.webp">
-                <h4>CBD All Natural</h4>
-                <p>Helping you live natural, one drop at a time.</p>
+                <img loading="lazy" alt="" src="Pictures/MidWestchesterJCC.webp">
+                <h4>Mid-Westchester JCC</h4>
+                <p>Mid-Westchester JCC is a Jewish community center in Scarsdale.</p>
                 </div>
-                <a class="greyButton" target="_blank" rel="noreferrer" href="https://cbdlivenatural.com/">Learn More</a>
+                <a class="greyButton" target="_blank" rel="noreferrer" href="https://jccmw.org/">Learn More</a>
             </div>
         </div>
     </div>

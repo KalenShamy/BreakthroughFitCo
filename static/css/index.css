@@ -1,5 +1,4 @@
 #Welcome {
-    background: rgb(22,22,22);
     flex-direction: column;
     position: relative;
     overflow: hidden;
@@ -129,30 +128,43 @@
     color: rgb(145, 145, 145);
     font-weight: 800;
 }
-#readytobreakthrough {
+#breakthroughDifference {
     background-color: rgb(22, 22, 22);
     padding: 40px 0 0.02px 0;
     font-family: arial, sans-serif;
     margin: 0 0 40px 0;
 }
-#rtbt_contents {
+#breakthroughDifference img {
+    width: 40vw;
+    object-fit: cover;
+    margin-left: 30px;
+    border-radius: 15px;
+    height: calc(100vh - 60px);
+}
+#breakthroughDifference > div > div {
     display: flex;
 }
-#readytobreakthrough h4 {
+#breakthroughDifference h2 {
     color: rgb(247, 247, 247);
-    line-height: 31.25px;
-    font-size: 25px;
-    font-weight: 400;
     margin: 0 0 24px 0;
 }
-#readytobreakthrough p {
+#breakthroughDifference p {
     color: rgb(164, 164, 164);
     line-height: 27px;
     font-size: 18px;
     margin: 0;
 }
+#breakthroughDifference p span {
+    color: white;
+}
 #map {
     width: 100%;
+    height: calc(80vh - 80px);
+    width: calc(100vw - 80px);
+    max-width: 700px;
+    margin: 0 auto 40px auto;
+    border-radius: 15px;
+    overflow: hidden;
 }
 #mapFrame {
     width: 100%;
@@ -192,21 +204,16 @@
     .SlideshowSkipButtons a {
         margin: 5px 15px;
     }
-    #rtbt_contents {
+    #breakthroughDifference > div > div {
         flex-direction: column;
         align-items: center;
     }
-    #rtbt_image {
-        max-width: 100%;
+    #breakthroughDifference img {
+        max-width: 500px;
+        width: 80%;
+        height: 400px;
         margin: 0 0 24px 0;
         order: -1;
-    }
-    #map {
-        height: 320px;
-        margin: 0 auto 40px 0;
-    }
-    #subMap, #rtbt_image noscript {
-        display: none;
     }
 }
 
@@ -231,26 +238,7 @@
     .SlideshowSkipButtons a {
         margin: 5px 15px;
     }
-    #rtbt_contents{
-        justify-content: space-evenly;
-        align-items: center;
-    }
-    #rtbt_image {
-        max-width: 40%;
-        min-width: 350px;
-        margin: 0 0 0 25px;
-    }
-    #map {
-        display: none;
-    }
-    #subMap {
-        margin-top: 20px;
-        height: 420px;
-        width: 100%;
-        border-radius: 15px;
-    }
 }
-
 
 /* Computer */
 @media screen and (min-width: 938px) {
@@ -260,23 +248,5 @@
         justify-content: flex-start;
         align-items: stretch;
         align-content: stretch;
-    }
-    #rtbt_contents{
-        justify-content: space-evenly;
-        align-items: center;
-    }
-    #rtbt_image {
-        max-width: 40%;
-        min-width: 500px;
-        margin: 0 0 0 25px;
-    }
-    #map {
-        display: none;
-    }
-    #subMap {
-        margin-top: 20px;
-        height: 420px;
-        width: 100%;
-        border-radius: 15px;
     }
 }
