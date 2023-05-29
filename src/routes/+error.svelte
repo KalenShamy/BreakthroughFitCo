@@ -15,5 +15,4 @@
         <p id="djLine">{joke[0]}</p>
         <p id="djAnswer">{joke[1]}</p>
     </div>
-    <p id="submitJoke">Want to submit one? Send it <a href="mailto:jake@breakthroughfitco.com?subject=Dad%20Joke%20Recommendation&body=Hey%21%20Here%27s%20a%20Dad%20Joke%20recommendation%20for%20you%21%0A%0AJoke%3A%20%22%22" target="_blank">here!</a></p>
 </div>
