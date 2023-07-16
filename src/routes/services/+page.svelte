@@ -62,6 +62,11 @@
                 IGNITE offers fun, inclusive, and structured programming to create community and enhance the lives of those we work with.
                 <br>
                 <br>
+                <b>Drop-in Classes:</b>
+                <br>
+                $50/class
+                <br>
+                <br>
                 <b>Packages:</b>
                 <br>
                 1x Per Week: $199/month
